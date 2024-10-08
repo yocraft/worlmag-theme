@@ -1,0 +1,43 @@
+/* Style 3 widget.
+--------------------------------------------- */
+.tg-front-post-load-more {
+	display: inline-block;
+	padding: length( 'l-5' );
+	background-color: $color__black;
+	color: $color__white;
+	@include font-size("font-size-xxs");
+	font-weight: 600;
+}
+
+.widget .waiting {
+	margin: 0 0 0 6px;
+	vertical-align: middle;
+}
+
+.cm-featured-posts--style-3 {
+
+	.cm-posts {
+		gap: length( 'l-6' );
+
+		.cm-post-content{
+			overflow: hidden;
+			.cm-entry-title{
+				font-size:15px;
+			}
+		}
+		.cm-post-show-excerpt{
+			p{
+				font-size: 14px;
+				margin-bottom: 0;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				width: 100%;
+			}
+			.cm-entry-title,.cm-below-entry-meta{
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+}

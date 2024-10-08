@@ -1,0 +1,84 @@
+.ajde_evcal_calendar.boxy
+
+  .eventon_list_event.hasbgimg,
+  .boxy.boxstyle1 .evo_boxtop,
+  .boxy.boxstyle2 .evo_boxtop,
+  .boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig
+    border-radius: 0 !important
+
+  .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig
+    background-color: #161616 !important
+
+  .evoShow_more_events
+    border-radius: 0
+
+  .evo_events_list_box
+    gap: 20px
+
+.evcal_cblock
+  .evo_start .year,
+  .evo_start .date,
+  .evo_start .month,
+  .evo_start .day
+    color: red !important
+    font-size: 20px !important
+    opacity: 1 !important
+
+#evcal_list
+
+  .evcal_location,
+  .evcal_location em
+    color: #fff !important
+    font-size: 14px !important
+    margin-top: 14px
+    text-wrap: balance
+
+  .evcal_oganizer
+    justify-content: center
+
+  .evcal_oganizer em i
+    color: #ff0000 !important
+
+  .evcal_time
+    font-size: 16px !important
+    flex-direction: column
+
+    .evo_endday
+      display: none
+
+  .eventon_list_event .evoet_cx em,
+  .evo_lightboxes .evoet_cx em
+    color: #FFFFFF
+
+  .evcal_oganizer
+    margin-top: 10px
+
+    .evoet_dataval
+      color: #FFFFFF !important
+
+.evoet_cx
+  .evoet_time_expand .evcal_time i.fa,
+  .evoet_location .evcal_location i.fa
+    color: #ff0000 !important
+    display: none
+
+.evcal_cblock .year
+  opacity: 1 !important
+
+.eventon_events_list .evoShow_more_events span
+  background-color: #161616
+
+.evoet_dayblock
+  .evo_start .year,
+  .evo_start .day,
+  .evo_start .date,
+  .evo_start .month
+    color: burlywood !important
+
+@media only screen and (min-width: 768px)
+/*     .ajde_evcal_calendar.boxy.box_4 .eventon_list_event {
+ width: 48% !important;
+ }
+ */
+  #evcal_list
+    max-width: 800px !important
