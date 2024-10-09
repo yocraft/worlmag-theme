@@ -1,48 +1,29 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const fs = require('fs');
 
 module.exports = {
-  mode: 'development', // Switch to 'production' for production-ready minified CSS
-  entry: './sass/custom.sass', // Entry point for Sass
+  mode: 'development', // or 'production' for optimized CSS
+  entry: './sass/custom.sass', // Entry point for your Sass file
+  output: {
+    path: path.resolve(__dirname, 'dist'), // Output directory for the compiled CSS
+    filename: 'dummy.js', // Dummy JS output, not used here
+  },
   module: {
     rules: [
       {
-        test: /\.(sa|sc|c)ss$/, // Match Sass, SCSS, and CSS files
+        test: /\.(sa|sc|c)ss$/, // Regex to match .sass, .scss, and .css files
         use: [
-          MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader, // Extracts the CSS into a separate file
           'css-loader', // Translates CSS into CommonJS
-          'sass-loader', // Compiles Sass to CSS
+          'sass-loader', // Compiles Sass into CSS
         ],
       },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      // Write compiled CSS to a temporary file
-      filename: 'compiled-sass.css',
+      filename: '../custom.css', // Output file for the compiled Sass (relative to the theme root)
     }),
-    // Append compiled Sass to the existing style.css
-    {
-      apply: (compiler) => {
-        compiler.hooks.afterEmit.tap('AppendToFilePlugin', () => {
-          const compiledCSS = fs.readFileSync(
-            path.resolve(__dirname, 'dist/compiled-sass.css'),
-            'utf8'
-          );
-          const existingCSS = fs.readFileSync(
-            path.resolve(__dirname, 'style.css'),
-            'utf8'
-          );
-
-          // Combine existing CSS with compiled Sass
-          const mergedCSS = existingCSS + '\n' + compiledCSS;
-
-          // Write the merged CSS back to style.css
-          fs.writeFileSync(path.resolve(__dirname, 'style.css'), mergedCSS);
-        });
-      },
-    },
   ],
-  watch: true, // Automatically recompile and append when changes are detected
+  watch: true, // Enable file watching for automatic recompilation
 };

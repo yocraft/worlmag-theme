@@ -1,0 +1,1067 @@
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./sass/custom.sass ***!
+  \***********************************************************************************************************/
+.woocommerce-MyAccount-navigation,
+.woocommerce-MyAccount-content {
+  background: #161616;
+  border-radius: 0px;
+  overflow: hidden;
+  border: 1px solid #2b2b2e !important;
+  padding: 20px;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+  color: #fff;
+  border-bottom: 1px solid #333;
+}
+.woocommerce-MyAccount-navigation ul .is-active a {
+  background: none;
+  color: #fe0000;
+}
+
+.woocommerce-MyAccount-content table th,
+.woocommerce-MyAccount-content table td {
+  border: none;
+}
+.woocommerce-MyAccount-content table thead {
+  background: none;
+  color: #fff;
+}
+
+.evotx_event {
+  background-color: #161616;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 0px;
+  border: 1px dotted #fff;
+}
+.evotx_event .past {
+  background-color: #161616 !important;
+}
+.evotx_event .evotx_event_tickets .evotx_tb span .evotx_view_ticket {
+  margin-bottom: 20px;
+}
+
+.event_description .evocard_row {
+  border-bottom: solid 1px #333;
+}
+
+.evotx_view_ticket .fa-eye {
+  display: none !important;
+}
+
+.evotx_tb span {
+  padding-bottom: 10px;
+}
+
+.col2-set {
+  background-color: transparent !important;
+}
+
+.woocommerce-form-register button .woocommerce-Button {
+  color: #fff !important;
+  background-color: red;
+  margin-bottom: 32px;
+  padding: 8px 54px;
+}
+.woocommerce-form-register:hover {
+  background-color: transparent;
+  color: #f00 !important;
+}
+
+.woocommerce-form-login,
+.woocommerce-form-register {
+  background: #161616;
+  border-radius: 0px;
+  overflow: hidden;
+  border: 1px solid #2b2b2e !important;
+}
+
+.woocommerce-account h2 {
+  font-size: 20px;
+}
+
+.the_champ_social_login_title {
+  margin-bottom: 16px;
+}
+.the_champ_social_login_title code {
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.heateor_ss_sl_optin_container {
+  width: 500px;
+  margin: 0 auto;
+}
+.heateor_ss_sl_optin_container code label {
+  font-family: "Inter";
+  font-size: 14px;
+  text-wrap: balance;
+}
+.heateor_ss_sl_optin_container a {
+  color: #ff0000 !important;
+}
+
+.heateor_ss_social_login_optin {
+  margin-right: 10px;
+}
+
+body .wpuf-message {
+  background: #ff0000 !important;
+  font-family: "Inter";
+  text-align: center;
+  border: none !important;
+  color: #fff !important;
+}
+
+#wpuf-login-form code {
+  white-space: normal;
+}
+#wpuf-login-form a {
+  font-family: "Inter" !important;
+  font-size: 15px !important;
+  text-decoration: underline !important;
+}
+
+.ajde_evcal_calendar.boxy .eventon_list_event.hasbgimg,
+.ajde_evcal_calendar.boxy .boxy.boxstyle1 .evo_boxtop,
+.ajde_evcal_calendar.boxy .boxy.boxstyle2 .evo_boxtop,
+.ajde_evcal_calendar.boxy .boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig {
+  border-radius: 0 !important;
+}
+.ajde_evcal_calendar.boxy .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig {
+  background-color: #161616 !important;
+}
+.ajde_evcal_calendar.boxy .evoShow_more_events {
+  border-radius: 0;
+}
+.ajde_evcal_calendar.boxy .evo_events_list_box {
+  gap: 20px;
+}
+
+.evcal_cblock .evo_start .year,
+.evcal_cblock .evo_start .date,
+.evcal_cblock .evo_start .month,
+.evcal_cblock .evo_start .day {
+  color: red !important;
+  font-size: 20px !important;
+  opacity: 1 !important;
+}
+
+#evcal_list .evcal_location,
+#evcal_list .evcal_location em {
+  color: #fff !important;
+  font-size: 14px !important;
+  margin-top: 14px;
+  text-wrap: balance;
+}
+#evcal_list .evcal_oganizer {
+  justify-content: center;
+}
+#evcal_list .evcal_oganizer em i {
+  color: #fff !important;
+}
+#evcal_list .evcal_time {
+  font-size: 16px !important;
+  flex-direction: column;
+}
+#evcal_list .evcal_time .evo_endday {
+  display: none;
+}
+#evcal_list .eventon_list_event .evoet_cx em,
+#evcal_list .evo_lightboxes .evoet_cx em {
+  color: #FFFFFF;
+}
+#evcal_list .evcal_oganizer {
+  margin-top: 10px;
+}
+#evcal_list .evcal_oganizer .evoet_dataval {
+  color: #FFFFFF !important;
+}
+
+.evoet_cx .evoet_time_expand .evcal_time i.fa,
+.evoet_cx .evoet_location .evcal_location i.fa {
+  color: #ff0000 !important;
+  display: none;
+}
+
+.evcal_cblock .year {
+  opacity: 1 !important;
+}
+
+.eventon_events_list .evoShow_more_events span {
+  background-color: #161616;
+}
+
+.evoet_dayblock .evo_start .year,
+.evoet_dayblock .evo_start .day,
+.evoet_dayblock .evo_start .date,
+.evoet_dayblock .evo_start .month {
+  color: burlywood !important;
+}
+
+.boxy .evoet_cx .evo_epbar_o {
+  background-color: #282828 !important;
+  border-radius: 5px !important;
+}
+
+/*     .ajde_evcal_calendar.boxy.box_4 .eventon_list_event {
+ * width: 48% !important;
+ * }
+ * */
+ * #evcal_list
+ *  max-width: 800px !important */
+button {
+  border-radius: 4px !important;
+}
+
+.evcal_btn {
+  border-radius: 4px !important;
+  line-height: 16px !important;
+}
+
+.cm-primary-nav ul > li:hover > a,
+.cm-primary-nav ul ul.sub-menu {
+  border: none !important;
+}
+.cm-primary-nav ul > li:hover > a li,
+.cm-primary-nav ul ul.sub-menu li {
+  border-bottom: none !important;
+}
+
+.current-menu-parent {
+  background: none !important;
+}
+
+.cm-header-1 .cm-row {
+  display: none;
+}
+
+#cm-primary-nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #fff !important;
+  border-bottom: none !important;
+}
+#cm-primary-nav li {
+  padding: 0 16px;
+}
+#cm-primary-nav .current-menu-ancestor a {
+  color: #fff !important;
+}
+
+.cm-primary-nav .cm-container {
+  width: 100%;
+}
+
+.menu-logo img {
+  height: 56px !important;
+  min-width: 100px;
+}
+
+.cm-menu-toggle {
+  position: absolute;
+  right: 60px;
+}
+
+.dark-skin .cm-layout-2 .cm-primary-nav ul > li > a {
+  color: #000 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  #cm-primary-nav .cm-container {
+    width: 100%;
+  }
+}
+.evcal_cblock .evo_start {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 5px;
+  align-items: center;
+}
+
+.cm-content {
+  padding-top: 20px;
+}
+
+.cm-entry-summary a:hover {
+  color: #000 !important;
+  background-color: #af0000 !important;
+}
+
+.cm-front-page-top-section {
+  margin-bottom: 90px;
+}
+
+.dark-skin .cm-layout-2 .cm-primary-nav .cm-menu-toggle svg,
+.dark-skin .cm-layout-2 .cm-primary-nav .cm-menu-toggle .cm-icon {
+  fill: #000;
+}
+
+.dark-skin .cm-layout-2 .cm-primary-nav ul > li > a {
+  font-size: 16px !important;
+}
+
+.ajde_evcal_calendar.boxy .eventon_list_event p.no_events {
+  background-color: #232323;
+}
+
+.evo_tz_time {
+  text-align: center;
+}
+
+.evo_tz {
+  font-size: 16px;
+}
+
+.evotx_image {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eventon_events_list .eventon_list_event .evoet_c3 {
+  flex: auto;
+}
+
+.evcal_evdata_cell p {
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+#evcal_list .evoet_title {
+  font-size: 28px !important;
+}
+
+.sd-title {
+  display: none !important;
+}
+
+.cm-footer .cm-upper-footer-cols .widget {
+  background: none;
+}
+
+.cm-lower-footer-cols .cm-lower-footer-col--1 {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.wp-block-buttons > .wp-block-button {
+  margin-bottom: 16px;
+}
+
+#respond.comment-respond form#commentform #comment-form__verbum {
+  background-color: #0d0d0d !important;
+}
+
+.price .evo_label {
+  color: red !important;
+  font-size: 24px !important;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.value {
+  font-size: 20px;
+}
+
+.evotx_quantity .qty {
+  width: auto;
+}
+
+.evotx_quantity,
+.tx_price_line {
+  border: none !important;
+}
+
+.evoTX_wc_section .evotx_quantity .qty b.plu,
+.evotx_qty_adjuster b.plu {
+  top: 0;
+  background-color: #ff0000;
+}
+
+.evotx_addtocart_total {
+  width: 220px !important;
+  margin: 0 auto !important;
+  margin-bottom: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  color: #fff !important;
+  gap: 20px !important;
+}
+
+.evotx_addtocart {
+  height: 40px !important;
+  width: 165px !important;
+  border-radius: 4px !important;
+}
+
+.evotx_cart_actions .evcal_btn {
+  line-height: 16px !important;
+  margin: 0 10px;
+  height: 40px !important;
+  width: 165px !important;
+  border-radius: 4px !important;
+}
+
+@media (max-width: 568px) {
+  .evcal_eventcard .evcal_evdata_row .evcal_evdata_cell {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .dark-skin .cm-layout-2 .cm-primary-nav ul > li > a {
+    font-size: 14px !important;
+  }
+}
+.dark-skin .cm-layout-2 .cm-primary-nav ul > li > a,
+.dark-skin .cm-layout-2 #cm-primary-nav .fa {
+  color: #000 !important;
+}
+
+.dark-skin .cm-layout-2 .cm-primary-nav .cm-submenu-toggle svg, .dark-skin .cm-layout-2 .cm-primary-nav .cm-submenu-toggle .cm-icon {
+  fill: red !important;
+}
+
+.cm-primary-nav .cm-submenu-toggle .cm-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.cm-widget-title {
+  border-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .cm-widget-title {
+    border-bottom: 1px solid red !important;
+  }
+}
+.eventon_main_section {
+  padding: 0;
+}
+
+#evcal_list .evoet_title {
+  text-wrap: balance !important;
+  text-align: left;
+  font-size: 24px !important;
+  width: 320px;
+  padding-bottom: 16px !important;
+}
+
+#evcal_list .evo_start {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 5px;
+  align-items: center;
+}
+
+#evcal_list .evoet_dayblock {
+  width: 300px !important;
+}
+
+#evcal_list .evoet_cx {
+  margin-right: 0px !important;
+}
+
+#evcal_list {
+  border: 1px solid #2b2b2e !important;
+}
+
+.evcal_list_a {
+  background-color: #333;
+}
+
+.eventon_sorting_section {
+  background-color: transparent !important;
+}
+
+#evcal_head.calendar_header #evcal_cur {
+  color: #fff !important;
+}
+
+#cm-primary-nav {
+  background-color: red;
+}
+
+.evo_metarow_organizer .evo_evdata_cell_content .evo_card_organizer {
+  padding: 0 !important;
+}
+
+.evcal_evdata_img {
+  height: 800px !important;
+}
+
+#evcal_list p.desc_trig_outter,
+.evocard_box,
+.evcal_evdata_row {
+  border-radius: 0 !important;
+}
+
+#evcal_list .eventon_list_event a:hover {
+  border: 0 !important;
+}
+
+.event_description {
+  padding-top: 16px !important;
+}
+
+.evoet_title {
+  font-size: 30px !important;
+}
+
+.evcal_evdata_icons {
+  display: none !important;
+}
+
+.evcal_time,
+.evcal_location,
+.evcal_time i.fa,
+.evoet_location .evcal_location i.fa {
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+.evo_h3 {
+  color: red !important;
+  font-size: 24px !important;
+}
+
+.evcal_event_subtitle {
+  display: none !important;
+}
+
+.featured_event,
+.completed-event {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+
+.evoet_c2 {
+  width: 80px;
+  margin-right: 0 !important;
+}
+
+.year {
+  font-size: 20px !important;
+  order: 2;
+}
+
+.day,
+.month {
+  font-size: 24px !important;
+}
+
+.evo_end .date {
+  font-size: 30px !important;
+}
+
+.evo_start,
+.evoet_dayblock {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.eventon_list_event .evo_metarow_details .eventon_full_description p,
+.eventon_list_event .event_description p {
+  font-size: 16px !important;
+}
+
+.eventon_list_event {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.evcal_eventcard p,
+.wp-block-image figcaption {
+  color: #fff !important;
+}
+.evcal_eventcard p,
+.wp-block-image figcaption {
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+}
+
+.evcal_evdata_img {
+  max-height: 730px !important;
+  background-size: contain !important;
+  background-color: #0d0d0d;
+}
+
+.evcal_event_details,
+.evorow.getdirections,
+.advertisement_above_footer {
+  background-color: #0d0d0d !important;
+}
+
+.evorow.getdirections {
+  border: none !important;
+}
+
+.evosin_event_title,
+.evo_end {
+  display: none;
+}
+
+#event_time,
+#event_location,
+#event_getdirection,
+#event_addtocal,
+.evocard_box {
+  background-color: #0d0d0d !important;
+}
+
+#event_evosocial {
+  background-color: red !important;
+  background-image: linear-gradient(99deg, #c90404 0%, #ff0000 100%) !important;
+}
+
+.color.evo_sin_page #evcal_list .eventon_list_event .evcal_list_a {
+  background-color: #0d0d0d !important;
+}
+
+.evcal_evdata_cell {
+  text-align: center !important;
+}
+
+.evo_mytime,
+.evo_get_direction_button,
+.evcal_btn {
+  background-color: burlywood !important;
+}
+
+.evcal_desc {
+  display: flex;
+  align-items: center;
+}
+
+.evoet_title {
+  text-align: center;
+}
+
+.fa-road {
+  display: none !important;
+}
+
+.evo_metarow_socialmedia a.evo_ss i,
+.evoInput,
+.evo_ics_nCal,
+.evo_ics_gCal,
+.evo_card_organizer_name_t a {
+  color: #fff !important;
+}
+
+.evcal_event_details .evcal_evdata_cell.shorter_desc .eventon_desc_in:after {
+  display: none;
+}
+
+.wpl-likebox {
+  display: none;
+}
+
+.evcal_list_a {
+  display: flex !important;
+  flex-direction: column;
+}
+
+#evcal_list .evoet_cx,
+#evcal_list .evoet_title {
+  width: 100% !important;
+}
+#evcal_list .evoet_cx,
+#evcal_list .evoet_title {
+  text-align: center !important;
+}
+
+#evcal_list .evoet_dayblock {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.evoet_time_expand {
+  justify-content: center;
+  gap: 10px;
+}
+
+.evo_start .year,
+.evo_start .date,
+.evo_start .month,
+.evo_start .day {
+  font-size: 30px !important;
+  color: #000 !important;
+}
+
+.evcal_evdata_cell .evotx_image, .evcal_evdata_cell .evo_h3 {
+  display: none;
+}
+
+.evo_tz {
+  font-size: 14px;
+}
+
+.evocard_row {
+  padding-bottom: 0;
+}
+
+#event_ftimage {
+  padding: 20px 20px 40px;
+}
+
+.evcal_evdata_img {
+  height: 600px !important;
+}
+
+.eventon_single_event.immersive .eventon_list_event .evoet_time_expand em.evcal_time {
+  background: none;
+}
+
+.eventon_single_event #evcal_list .evoet_title {
+  font-size: 30px !important;
+}
+
+.eventon_single_event #evcal_list .evcal_time {
+  font-size: 18px !important;
+}
+
+.eventon_single_event #evcal_list .evcal_location,
+.eventon_single_event #evcal_list .evoet_time_expand,
+.eventon_single_event #evcal_list .evcal_oganizer {
+  display: none !important;
+}
+
+.eventon_single_event #evcal_list .evoet_time_expand {
+  flex-direction: column;
+}
+
+.evoet_location {
+  text-align: center;
+}
+
+.refund_policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.refund_policy p {
+  display: block !important;
+  font-size: 14px !important;
+  text-align: center;
+  color: #888888 !important;
+  width: 75%;
+  margin-bottom: 10px !important;
+  text-wrap: balance !important;
+}
+.refund_policy a {
+  color: #f80101 !important;
+}
+
+#event_eventdetails .evo_label,
+#event_time .evo_label,
+.price .evo_label,
+#event_customfield1 .evo_label,
+#event_customfield2 .evo_label,
+#event_customfield3 .evo_label,
+#event_organizer .evo_label {
+  color: red !important;
+  font-size: 22px !important;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#event_customfield1 .evorow,
+#event_customfield2 .evorow,
+#event_customfield3 .evorow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eventdetails .evorow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#evcal_list .evorow.getdirections .evo_get_direction_content {
+  padding: 20px;
+  gap: 20px;
+}
+#evcal_list .evorow.getdirections .evoInput[type=text] {
+  background: #333;
+}
+#evcal_list .evorow.getdirections .evo_get_direction_content button {
+  width: 150px;
+  justify-content: center;
+}
+
+#evcal_list .eventon_list_event .evcal_eventcard p {
+  display: flex !important;
+  flex-direction: column !important;
+}
+#evcal_list .eventon_list_event .evcal_eventcard p a {
+  padding: 0;
+}
+
+.time .evo_metarow_time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evocard_main_image span {
+  max-height: 640px !important;
+  max-width: 500px !important;
+}
+
+.evocard_row .evocard_main_image_hold {
+  margin: 0 auto;
+  background-color: #0d0d0d;
+  max-height: 640px !important;
+  max-width: 500px !important;
+}
+
+.evoet_c1 .ev_ftImg {
+  display: none !important;
+}
+
+.evoet_c3 .evoet_title,
+.evcal_time,
+.evo_tz,
+.evo_endday {
+  color: #fff !important;
+}
+
+.wc-proceed-to-checkout {
+  align-items: flex-start;
+}
+
+.gpay-card-info-container {
+  min-width: 160px;
+  max-width: 200px;
+}
+
+.evose_repeat_header {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.ajde_evcal_calendar.boxy.boxstyle1 .evo_boxtop {
+  border-radius: 0px !important;
+}
+
+.ajde_evcal_calendar.boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig {
+  border-radius: 0 !important;
+}
+
+.ajde_evcal_calendar.boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig {
+  background-color: #161616 !important;
+}
+
+.evoet_progress_bar {
+  display: flex !important;
+  justify-content: center;
+}
+
+.evo_epbar_o {
+  margin-top: 10px;
+  margin-right: 0 !important;
+}
+
+.evo_countdowner {
+  color: #fff !important;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  #evcal_list {
+    max-width: 398px !important;
+  }
+  .evorow.getdirections .evo_get_direction_content {
+    flex-direction: column !important;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .wc-proceed-to-checkout {
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .checkout-button {
+    min-width: 160px;
+  }
+}
+.widget_block .wp-block-separator {
+  width: 100% !important;
+  margin: 40px 0 !important;
+  background-color: #71717a !important;
+}
+
+.cm-advertisement-content img {
+  width: 100%;
+}
+
+.cm-widget-title span {
+  padding: 6px 12px;
+  font-size: 18px;
+}
+
+.header-image {
+  border-bottom: none !important;
+}
+
+.cm-beside-slider-widget {
+  padding-left: 0 !important;
+}
+
+@media (min-width: 1024px) {
+  .cm-primary {
+    margin-right: 40px;
+  }
+  .cm-beside-slider-widget {
+    padding-left: 40px !important;
+  }
+}
+#quizForm1 {
+  border: 1px solid #2b2b2e;
+  background: #161616;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.qmn_pagination {
+  justify-content: flex-start !important;
+}
+
+.qmn_quiz_container .qmn_btn {
+  background: #ff0000 !important;
+  border: none !important;
+  width: 200px;
+}
+
+.qsm-quiz-container {
+  display: flex;
+  flex-direction: column;
+}
+.qsm-quiz-container img {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.ts_poll_section header {
+  padding: 16px 10px 16px !important;
+}
+.ts_poll_section header span {
+  font-family: "Inter" !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin-bottom: 0 !important;
+}
+.ts_poll_section main {
+  border: 1px solid #2b2b2e;
+  background: #161616;
+  padding: 20px !important;
+}
+.ts_poll_section footer {
+  border: 1px solid #333;
+  background-color: #161616 !important;
+  border-top: 0;
+}
+
+.ts_poll_answer_label {
+  font-family: "Inter" !important;
+  font-size: 18px !important;
+  padding-left: 20px !important;
+}
+
+.ts_poll_footer_main button {
+  padding: 10px 20px !important;
+  border-radius: 3px !important;
+}
+.ts_poll_footer_main #ts_poll_result_button_499928 button span {
+  font-weight: 600 !important;
+  font-family: "inter" !important;
+  line-height: 22px !important;
+}
+
+.ts-poll-emoji-100:before {
+  display: none;
+}
+
+.album-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.album-wrapper .cover-art {
+  width: 360px;
+  height: 360px;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.album-wrapper .tracklist {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tracklist .links {
+  display: flex;
+  gap: 30px;
+}
+.tracklist .links button {
+  width: 100px;
+  font-size: 14px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-description {
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .album-wrapper {
+    flex-direction: column;
+  }
+}
+.cm-post-content p {
+  margin-bottom: 24px;
+  padding: 20px;
+}
+
+.cm-post-content {
+  background-color: #161616;
+}
+
+.cm-featured-posts .cm-first-post .cm-entry-title {
+  font-size: 20px;
+}
