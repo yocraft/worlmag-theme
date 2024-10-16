@@ -19,7 +19,7 @@ $featured_img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thu
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?><?php echo colormag_schema_markup('entry'); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped 
-															?>>
+																														?>>
 	<?php
 	/**
 	 * Hook: colormag_before_post_content.
@@ -38,7 +38,7 @@ $featured_img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thu
 
 			<header class="cm-entry-header">
 				<h1 class="cm-entry-title" <?php echo colormag_schema_markup('entry_title'); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped 
-											?>>
+																		?>>
 					<?php the_title(); ?>
 				</h1>
 			</header>
@@ -52,21 +52,6 @@ $featured_img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thu
 
 		if (true == get_theme_mod('colormag_enable_featured_image', true) && has_post_thumbnail()) :
 	?>
-			<div class="cm-featured-image" <?php echo colormag_schema_markup('image'); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped 
-											?>>
-				<?php if (1 == get_theme_mod('colormag_enable_lightbox', 0)) : ?>
-					<a href="<?php echo esc_url($image_popup_url); ?>" class="image-popup"><?php the_post_thumbnail('colormag-featured-image-large'); ?></a>
-				<?php
-				else :
-					the_post_thumbnail('colormag-featured-image-large');
-				endif;
-
-				if (1 == get_theme_mod('colormag_enable_schema_markup', '')) :
-				?>
-					<meta itemprop="url" content="<?php echo esc_url(get_the_post_thumbnail_url($post->ID, 'full')); ?>">
-				<?php endif; ?>
-			</div>
-
 			<?php if (1 == get_theme_mod('colormag_enable_featured_image_caption', 0) && get_post(get_post_thumbnail_id())->post_excerpt) : ?>
 				<span class="featured-image-caption">
 					<?php echo wp_kses_post(get_post(get_post_thumbnail_id())->post_excerpt); ?>
@@ -124,13 +109,13 @@ $featured_img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thu
 				<div class="cover-art" style="background-image: url('<?php echo $featured_img_url ?>')"></div>
 				<div class="tracklist">
 					<h4>Tracklist</h4>
-					<p><?php echo wp_kses_post(get_field('tracklist')); ?></p>
+					<?php echo wp_kses_post(get_field('tracklist')); ?>
 					<?php if (get_field('stream_link')): ?>
 						<h5>Stream and Download</h5>
 						<div class="links">
 							<a href"><button>Stream</button></a>
 							<?php if (get_field('stream_link')): ?>
-								<a href"><button>Download</button></a>
+								<a href""><button>Download</button></a>
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
