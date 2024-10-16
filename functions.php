@@ -482,4 +482,44 @@ function enqueue_theme_styles()
 }
 add_action('wp_enqueue_scripts', 'enqueue_theme_styles');
 
+function include_custom_posts_in_category_archive($query)
+{
+    // Check if we're on a category archive page and it's the main query
+    if ($query->is_category() && $query->is_main_query() && !is_admin()) {
+        // Include the 'music' custom post type in the query
+        $query->set('post_type', array('post', 'music', 'news'));
+    }
+}
+add_action('pre_get_posts', 'include_custom_posts_in_category_archive');
+
+function custom_remove_menus()
+{
+    // Get current user's role
+    if (current_user_can('editor')) {
+        // Remove for Editor role
+        remove_menu_page('index.php');
+        remove_menu_page('edit.php?post_type=page');
+        remove_menu_page('tools.php');           // Tools
+        remove_menu_page('options-general.php');
+        remove_menu_page('edit.php');
+        remove_menu_page('edit-comments.php'); // Settings
+        remove_menu_page('upload.php');
+        remove_menu_page('plugins.php'); // Plugins
+        remove_menu_page('profile.php');
+        remove_menu_page('edit.php?post_type=elementor_library');
+        remove_menu_page('qsm_dashboard');
+        remove_menu_page('wpcf7');
+        remove_menu_page('wpseo_workouts');
+        remove_menu_page('admin.php?page=sib_page_home');
+        remove_menu_page('sib_page_home');
+        remove_menu_page('edit.php?post_type=product');
+    }
+    if (current_user_can('subscriber')) {
+        // Remove for Subscriber role
+        remove_menu_page('edit.php');            // Posts
+        remove_menu_page('upload.php');          // Media
+        remove_menu_page('edit-comments.php');   // Comments
+    }
+}
+add_action('admin_menu', 'custom_remove_menus', 9999);
 #endregion
