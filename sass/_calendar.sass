@@ -25,6 +25,7 @@
     opacity: 1 !important
 
 #evcal_list
+  border: 1px solid #2b2b2e !important
 
   .evcal_location,
   .evcal_location em
@@ -42,6 +43,26 @@
     font-size: 16px !important
     flex-direction: column
 
+  .evo_start
+    display: flex !important
+    flex-direction: row !important
+    gap: 5px
+    align-items: center
+
+  .evoet_dayblock
+    width: 300px !important
+
+  .evoet_cx
+    margin-right: 0px !important
+
+  .evoet_title
+    font-size: 22px !important
+    line-height: 28px !important
+    text-wrap: balance !important
+    text-align: left
+    width: 320px
+    padding-bottom: 16px !important
+
     .evo_endday
       display: none
 
@@ -55,6 +76,9 @@
     .evoet_dataval
       color: #FFFFFF !important
 
+  .eventon_list_event a:hover
+    border: 0 !important
+
 .evoet_cx
   .evoet_time_expand .evcal_time i.fa,
   .evoet_location .evcal_location i.fa
@@ -63,9 +87,6 @@
 
 .evcal_cblock .year
   opacity: 1 !important
-
-.eventon_events_list .evoShow_more_events span
-  background-color: #161616
 
 .evoet_dayblock
   .evo_start .year,
@@ -77,6 +98,16 @@
 .boxy .evoet_cx .evo_epbar_o
   background-color: #282828 !important
   border-radius: 5px !important
+
+#evcal_widget #evcal_list .eventon_list_event .evcal_list_a
+  border: 1px solid #2b2b2e !important
+
+.eventon_events_list
+  .evoShow_more_events
+    border-radius: 0 !important
+    span
+      background-color: #161616 !important
+      border: 10px solid transparent
 
 @media only screen and (min-width: 768px)
 /*     .ajde_evcal_calendar.boxy.box_4 .eventon_list_event {

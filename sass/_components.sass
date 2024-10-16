@@ -8,7 +8,8 @@ button
 // NavBar
 
 .cm-primary-nav ul > li:hover > a,
-.cm-primary-nav ul ul.sub-menu
+.cm-primary-nav ul ul.sub-menu,
+.cm-layout-2 .cm-primary-nav ul > li > a
   border: none !important
 
   & li
@@ -47,6 +48,14 @@ button
 .dark-skin .cm-layout-2
   .cm-primary-nav ul > li > a
     color: #000 !important
+
+  .sub-menu li
+    &:hover
+      background-color: burlywood !important
+
+    a
+      &:hover
+        border-bottom: none !important
 
 @media only screen and (max-width: 767px)
   #cm-primary-nav .cm-container
