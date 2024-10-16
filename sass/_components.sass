@@ -57,6 +57,26 @@ button
       &:hover
         border-bottom: none !important
 
+  #cm-primary-nav
+    border-top: none
+
+  .cm-primary-nav a
+    color: black !important
+
+  .cm-primary-nav .cm-submenu-toggle .cm-icon
+    fill: #ff0000
+
+  .cm-primary-nav ul li:hover, .cm-primary-nav ul li.focus
+    background-color: transparent
+
+  .cm-primary-nav ul li:hover > ul, .cm-primary-nav ul li.focus > ul
+    left: 0
+    background-color: white
+
+  .cm-primary-nav ul li ul li:hover
+    color: #fff
+    background-color: burlywood
+
 @media only screen and (max-width: 767px)
   #cm-primary-nav .cm-container
     width: 100%

@@ -350,6 +350,26 @@ button {
 .dark-skin .cm-layout-2 .sub-menu li a:hover {
   border-bottom: none !important;
 }
+.dark-skin .cm-layout-2 #cm-primary-nav {
+  border-top: none;
+}
+.dark-skin .cm-layout-2 .cm-primary-nav a {
+  color: black !important;
+}
+.dark-skin .cm-layout-2 .cm-primary-nav .cm-submenu-toggle .cm-icon {
+  fill: #ff0000;
+}
+.dark-skin .cm-layout-2 .cm-primary-nav ul li:hover, .dark-skin .cm-layout-2 .cm-primary-nav ul li.focus {
+  background-color: transparent;
+}
+.dark-skin .cm-layout-2 .cm-primary-nav ul li:hover > ul, .dark-skin .cm-layout-2 .cm-primary-nav ul li.focus > ul {
+  left: 0;
+  background-color: white;
+}
+.dark-skin .cm-layout-2 .cm-primary-nav ul li ul li:hover {
+  color: #fff;
+  background-color: burlywood;
+}
 
 @media only screen and (max-width: 767px) {
   #cm-primary-nav .cm-container {
