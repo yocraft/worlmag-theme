@@ -1032,12 +1032,27 @@ button {
   padding-left: 0 !important;
 }
 
+.cm-featured-category-slider .cm-below-entry-meta {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .cm-primary {
     margin-right: 40px;
   }
   .cm-beside-slider-widget {
     padding-left: 40px !important;
+  }
+}
+@media (min-width: 48em) {
+  #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-entry-title {
+    font-size: 5.4rem;
+    text-transform: uppercase;
+    text-wrap: balance;
+    margin-bottom: 100px;
+  }
+  #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-slide-content {
+    padding: 24px 24px 68px;
   }
 }
 .cm-widget-title {
