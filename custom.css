@@ -372,7 +372,8 @@ button {
   fill: #ff0000;
 }
 
-.cm-primary-nav ul li:hover {
+.cm-primary-nav ul li:hover,
+.cm-primary-nav ul li.focus > a {
   background-color: transparent;
 }
 
@@ -389,9 +390,6 @@ button {
   text-transform: uppercase;
 }
 
-.dark-skin .cm-primary-nav ul > li.focus {
-  background-color: transparent;
-}
 .dark-skin .sub-menu li:hover {
   background-color: burlywood !important;
 }
