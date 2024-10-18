@@ -349,9 +349,6 @@ button {
 #cm-primary-nav li {
   padding: 0 16px;
 }
-#cm-primary-nav .current-menu-ancestor a {
-  color: #fff !important;
-}
 
 .cm-primary-nav .cm-container {
   width: 100%;
@@ -375,7 +372,7 @@ button {
   fill: #ff0000;
 }
 
-.cm-primary-nav ul li:hover, .cm-primary-nav ul li.focus {
+.cm-primary-nav ul li:hover {
   background-color: transparent;
 }
 
@@ -392,6 +389,9 @@ button {
   text-transform: uppercase;
 }
 
+.dark-skin .cm-primary-nav ul > li.focus {
+  background-color: transparent;
+}
 .dark-skin .sub-menu li:hover {
   background-color: burlywood !important;
 }
