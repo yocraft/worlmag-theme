@@ -1080,6 +1080,10 @@ button {
   background-color: #ff0000;
 }
 
+.bx-controls {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .cm-primary {
     margin-right: 40px;
@@ -1098,10 +1102,6 @@ button {
   }
   #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-slide-content {
     padding: 24px 24px 68px;
-  }
-  #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .bx-controls {
-    position: relative;
-    top: -38%;
   }
 }
 .cm-widget-title {
