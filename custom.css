@@ -299,6 +299,10 @@ button {
   line-height: 16px !important;
 }
 
+#menu-primary-menu {
+  justify-content: flex-end;
+}
+
 .cm-primary-nav ul > li:hover > a,
 .cm-primary-nav ul ul.sub-menu,
 .cm-layout-2 .cm-primary-nav ul > li > a {
@@ -370,6 +374,14 @@ button {
 .cm-primary-nav ul li ul li:hover {
   color: #fff;
   background-color: burlywood;
+}
+
+.cm-footer-bar__2 p {
+  padding-top: 46px;
+}
+
+#menu-footer-tertiary a {
+  text-transform: uppercase;
 }
 
 .dark-skin .cm-layout-2 .cm-primary-nav ul > li > a {
@@ -1016,11 +1028,22 @@ button {
     padding-left: 40px !important;
   }
 }
+.cm-widget-title {
+  text-transform: uppercase;
+}
+
 #quizForm1 {
   border: 1px solid #2b2b2e;
   background: #161616;
   padding: 20px;
   margin-top: 20px;
+}
+
+.quiz_section {
+  color: #fff;
+}
+.quiz_section label {
+  font-family: "Inter";
 }
 
 .qmn_pagination {
@@ -1080,6 +1103,15 @@ button {
 
 .ts-poll-emoji-100:before {
   display: none;
+}
+
+.mlw_qmn_message_before {
+  margin-bottom: 0;
+}
+.mlw_qmn_message_before p {
+  font-size: 20px;
+  font-family: "Outfit";
+  text-transform: uppercase;
 }
 
 .album-wrapper {
@@ -1152,5 +1184,4 @@ button {
 
 .cm-featured-posts .cm-first-post .cm-entry-title {
   font-size: 20px;
-  font-family: "Outfit";
 }
