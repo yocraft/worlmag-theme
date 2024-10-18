@@ -124,6 +124,11 @@ body .wpuf-message {
   text-decoration: underline !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Outfit";
+  font-weight: 700;
+}
+
 .dark-skin a {
   color: white;
 }
@@ -377,6 +382,11 @@ button {
   border-bottom: none !important;
 }
 
+@media only screen and (min-width: 767px) {
+  .cm-footer-bar__2 p {
+    padding-top: 46px;
+  }
+}
 @media only screen and (max-width: 767px) {
   #cm-primary-nav .cm-container {
     width: 100%;
@@ -1142,4 +1152,5 @@ button {
 
 .cm-featured-posts .cm-first-post .cm-entry-title {
   font-size: 20px;
+  font-family: "Outfit";
 }
