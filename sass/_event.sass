@@ -174,8 +174,25 @@
   line-height: 24px !important
 
 .evo_h3
-  color: red !important
-  font-size: 24px !important
+  text-transform: uppercase
+
+#evcal_list .evorow.getdirections .evoInput[type="text"],
+.evo_pop_body .evorow.getdirections .evoInput[type="text"]
+  padding: 8px
+
+#evcal_list .evorow.getdirections .evoInput:focus,
+.evo_pop_body .evorow.getdirections .evoInput:focus
+  border: 1px solid #fff
+
+#evcal_list .eventon_list_event .evoInput,
+.evo_pop_body .evoInput
+  font-style: normal
+
+.evo_btn_arr_circ
+  height: 30px
+
+  .fa
+    color: $black
 
 .evcal_event_subtitle
   display: none !important

@@ -389,6 +389,11 @@ button {
   background-color: #ff0000;
 }
 
+.evo_btn_arr {
+  border-radius: 0;
+  background-color: burlywood !important;
+}
+
 .cm-footer-bar__2 p {
   padding-top: 46px;
 }
@@ -637,8 +642,29 @@ button {
 }
 
 .evo_h3 {
-  color: red !important;
-  font-size: 24px !important;
+  text-transform: uppercase;
+}
+
+#evcal_list .evorow.getdirections .evoInput[type=text],
+.evo_pop_body .evorow.getdirections .evoInput[type=text] {
+  padding: 8px;
+}
+
+#evcal_list .evorow.getdirections .evoInput:focus,
+.evo_pop_body .evorow.getdirections .evoInput:focus {
+  border: 1px solid #fff;
+}
+
+#evcal_list .eventon_list_event .evoInput,
+.evo_pop_body .evoInput {
+  font-style: normal;
+}
+
+.evo_btn_arr_circ {
+  height: 30px;
+}
+.evo_btn_arr_circ .fa {
+  color: #000;
 }
 
 .evcal_event_subtitle {
@@ -1014,6 +1040,10 @@ button {
   margin-top: -20px;
 }
 
+.cm-slider {
+  height: 100vh;
+}
+
 .widget_block .wp-block-separator {
   width: 100% !important;
   margin: 40px 0 !important;
@@ -1060,6 +1090,7 @@ button {
 }
 @media (min-width: 48em) {
   #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-entry-title {
+    width: 65%;
     font-size: 5.4rem;
     text-transform: uppercase;
     text-wrap: balance;
@@ -1070,7 +1101,7 @@ button {
   }
   #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .bx-controls {
     position: relative;
-    top: -180px;
+    top: -38%;
   }
 }
 .cm-widget-title {
