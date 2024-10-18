@@ -126,7 +126,7 @@ body .wpuf-message {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Outfit";
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .dark-skin a {
@@ -322,6 +322,15 @@ button {
   display: none;
 }
 
+.dark-skin .cm-layout-2 .cm-primary-nav ul > li > a,
+.dark-skin .cm-layout-2 .cm-primary-nav ul ul.sub-menu li a {
+  color: #000;
+}
+
+.dark-skin .cm-layout-2 .cm-primary-nav .current-menu-item a {
+  color: red;
+}
+
 #cm-primary-nav {
   height: 70px;
   display: flex;
@@ -354,10 +363,6 @@ button {
   border-top: none;
 }
 
-.cm-primary-nav a {
-  color: black !important;
-}
-
 .cm-primary-nav .cm-submenu-toggle .cm-icon {
   fill: #ff0000;
 }
@@ -371,11 +376,6 @@ button {
   background-color: white;
 }
 
-.cm-primary-nav ul li ul li:hover {
-  color: #fff;
-  background-color: burlywood;
-}
-
 .cm-footer-bar__2 p {
   padding-top: 46px;
 }
@@ -384,9 +384,6 @@ button {
   text-transform: uppercase;
 }
 
-.dark-skin .cm-layout-2 .cm-primary-nav ul > li > a {
-  color: #000 !important;
-}
 .dark-skin .cm-layout-2 .sub-menu li:hover {
   background-color: burlywood !important;
 }
@@ -547,7 +544,6 @@ button {
     font-size: 14px !important;
   }
 }
-.dark-skin .cm-layout-2 .cm-primary-nav ul > li > a,
 .dark-skin .cm-layout-2 #cm-primary-nav .fa {
   color: #000 !important;
 }

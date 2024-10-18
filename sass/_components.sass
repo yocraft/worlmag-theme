@@ -23,6 +23,13 @@ button
 .cm-header-1 .cm-row
   display: none
 
+.dark-skin .cm-layout-2 .cm-primary-nav ul > li > a,
+.dark-skin .cm-layout-2 .cm-primary-nav ul ul.sub-menu li a
+  color: #000
+
+.dark-skin .cm-layout-2 .cm-primary-nav .current-menu-item a
+  color: red
+
 #cm-primary-nav
   height: 70px
   display: flex
@@ -50,9 +57,6 @@ button
 #cm-primary-nav
   border-top: none
 
-.cm-primary-nav a
-  color: black !important
-
 .cm-primary-nav .cm-submenu-toggle .cm-icon
   fill: #ff0000
 
@@ -63,10 +67,6 @@ button
   left: 0
   background-color: white
 
-.cm-primary-nav ul li ul li:hover
-  color: #fff
-  background-color: burlywood
-
 // Footer
 .cm-footer-bar__2 p
   padding-top: 46px
@@ -75,8 +75,6 @@ button
   text-transform: uppercase
 
 .dark-skin .cm-layout-2
-  .cm-primary-nav ul > li > a
-    color: #000 !important
 
   .sub-menu li
     &:hover
