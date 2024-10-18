@@ -28,7 +28,7 @@ button
 
 .dark-skin .cm-primary-nav ul > li > a,
 .dark-skin .cm-primary-nav ul ul.sub-menu li a
-  color: #000
+  color: $black
 
 .dark-skin .cm-primary-nav .current-menu-item a
   color: red
@@ -37,7 +37,7 @@ button
   height: 70px
   display: flex
   align-items: center
-  background-color: #fff !important
+  background-color: $white !important
   border-bottom: none !important
 
   li
@@ -58,7 +58,7 @@ button
   border-top: none
 
 .cm-primary-nav .cm-submenu-toggle .cm-icon
-  fill: #ff0000
+  fill: $red
 
 .cm-primary-nav ul li:hover,
 .cm-primary-nav ul li.focus > a
@@ -67,6 +67,10 @@ button
 .cm-primary-nav ul li:hover > ul, .cm-primary-nav ul li.focus > ul
   left: 0
   background-color: white
+
+// Buttons
+.cm-entry-button
+  background-color: $red
 
 // Footer
 .cm-footer-bar__2 p
@@ -79,7 +83,7 @@ button
 
   .sub-menu li
     &:hover
-      background-color: burlywood !important
+      background-color: $gold !important
 
     a
       &:hover

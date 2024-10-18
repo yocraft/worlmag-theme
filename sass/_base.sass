@@ -1,14 +1,14 @@
 h1, h2, h3, h4, h5, h6
-  font-family: 'Outfit'
+  font-family: $secondary-font
   font-weight: 700 !important
 
 .dark-skin
 
   a
-    color: white
+    color: $white
 
   .cm-post-content p
-    color: white
+    color: $white
 
 button,
 input[type='button'],
@@ -17,12 +17,12 @@ input[type='submit'],
 .wp-block-button .wp-block-button__link,
 .wp-element-button,
 .cm-button
-  background-color: red
+  background-color: $red
   border: none
 
   &:hover
     background-color: #a21714
-    color: white
+    color: $white
 
 .cm-secondary .cm-widget-title span,
 #cm-tertiary .cm-widget-title span,
@@ -32,4 +32,7 @@ input[type='submit'],
 .cm-category-slide-next,
 .cm-featured-category-slider .cm-slide-content .cm-entry-header-meta .cm-post-categories a,
 .cm-slider-area-rotate .cm-slide-content .cm-entry-header-meta .cm-post-categories a
-  background-color: red
+  background-color: $red
+
+.cm-page-header .cm-page-title
+  border-bottom: 2px solid $red
