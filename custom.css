@@ -48,10 +48,10 @@
   background-color: #161616;
   margin-bottom: 10px;
   padding: 20px;
-  border-radius: 0px;
-  border: 1px dotted #fff;
+  border-radius: 0px !important;
+  border: 1px dotted #606062;
 }
-.evotx_event .past {
+.evotx_event.past {
   background-color: #161616 !important;
 }
 .evotx_event .evotx_event_tickets .evotx_tb span .evotx_view_ticket {
