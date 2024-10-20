@@ -94,12 +94,12 @@
 }
 
 .woocommerce-form-register button.woocommerce-Button {
-  color: #fff;
-  background-color: #ff0000;
+  color: #fff !important;
+  background-color: #ff0000 !important;
   padding: 8px 54px;
 }
 .woocommerce-form-register button.woocommerce-Button:hover {
-  background-color: #a21714;
+  background-color: #a21714 !important;
 }
 
 .woocommerce-account h2 {
