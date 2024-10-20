@@ -104,6 +104,12 @@
   font-family: "Outfit";
   font-size: 18px;
   font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.the_champ_login_container {
+  margin-bottom: 40px;
 }
 
 .heateor_ss_sl_optin_container {
@@ -112,8 +118,9 @@
 }
 .heateor_ss_sl_optin_container code label {
   font-family: "Inter";
-  font-size: 14px;
+  font-size: 14px !important;
   text-wrap: balance;
+  color: #fff;
 }
 .heateor_ss_sl_optin_container a {
   color: #ff0000 !important;
@@ -143,6 +150,7 @@ body .wpuf-message {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Outfit";
   font-weight: 700 !important;
+  text-transform: uppercase !important;
 }
 
 .dark-skin a {
