@@ -87,10 +87,19 @@
 
 .woocommerce-form-login,
 .woocommerce-form-register {
-  background: #161616;
+  background-color: #161616 !important;
   border-radius: 0px;
   overflow: hidden;
   border: 1px solid #2b2b2e !important;
+}
+
+.woocommerce-form-register button.woocommerce-Button {
+  color: #fff;
+  background-color: #ff0000;
+  padding: 8px 54px;
+}
+.woocommerce-form-register button.woocommerce-Button:hover {
+  background-color: #a21714;
 }
 
 .woocommerce-account h2 {
@@ -142,7 +151,7 @@ body .wpuf-message {
   white-space: normal;
 }
 #wpuf-login-form a {
-  font-family: "$primary-font" !important;
+  font-family: "Inter" !important;
   font-size: 15px !important;
   text-decoration: underline !important;
 }

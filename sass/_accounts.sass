@@ -89,10 +89,18 @@
 
 .woocommerce-form-login,
 .woocommerce-form-register
-  background: $dark-grey
+  background-color: $dark-grey !important
   border-radius: 0px
   overflow: hidden
   border: 1px solid $border-grey !important
+
+.woocommerce-form-register button.woocommerce-Button
+  color: $white
+  background-color: $red
+  padding: 8px 54px
+
+  &:hover
+    background-color: #a21714
 
 .woocommerce-account
   h2
@@ -141,6 +149,6 @@ body
     white-space: normal
 
   a
-    font-family: '$primary-font' !important
+    font-family: $primary-font !important
     font-size: 15px !important
     text-decoration: underline !important
