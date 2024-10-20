@@ -1,6 +1,6 @@
 .woocommerce-MyAccount-navigation,
 .woocommerce-MyAccount-content
-  background: $dark-grey
+  background-color: $dark-grey !important
   border-radius: 0px
   overflow: hidden
   border: 1px solid $border-grey !important
@@ -11,8 +11,12 @@
   ul
     li
       a
-        color: $white
-        border-bottom: 1px solid #333
+        color: $white !important
+        border-bottom: 1px solid $border-grey !important
+
+        &:hover
+          color: $white !important
+          background-color: $red !important
 
     .is-active
       a
@@ -25,10 +29,21 @@
     th,
     td
       border: none
+      color: $white
+
+      a
+        text-decoration: underline
 
   table thead
-      background: none
-      color: $white
+        background: none
+        color: $white
+
+.woocommerce-pagination
+  a
+    text-decoration: underline
+
+    &:hover
+      background-color: transparent !important
 
 .evotx_event
   background-color: $dark-grey

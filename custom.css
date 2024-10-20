@@ -3,7 +3,7 @@
   \***********************************************************************************************************/
 .woocommerce-MyAccount-navigation,
 .woocommerce-MyAccount-content {
-  background: #161616;
+  background-color: #161616 !important;
   border-radius: 0px;
   overflow: hidden;
   border: 1px solid #2b2b2e !important;
@@ -11,8 +11,12 @@
 }
 
 .woocommerce-MyAccount-navigation ul li a {
-  color: #fff;
-  border-bottom: 1px solid #333;
+  color: #fff !important;
+  border-bottom: 1px solid #2b2b2e !important;
+}
+.woocommerce-MyAccount-navigation ul li a:hover {
+  color: #fff !important;
+  background-color: #ff0000 !important;
 }
 .woocommerce-MyAccount-navigation ul .is-active a {
   background: none;
@@ -22,10 +26,22 @@
 .woocommerce-MyAccount-content table th,
 .woocommerce-MyAccount-content table td {
   border: none;
+  color: #fff;
+}
+.woocommerce-MyAccount-content table th a,
+.woocommerce-MyAccount-content table td a {
+  text-decoration: underline;
 }
 .woocommerce-MyAccount-content table thead {
   background: none;
   color: #fff;
+}
+
+.woocommerce-pagination a {
+  text-decoration: underline;
+}
+.woocommerce-pagination a:hover {
+  background-color: transparent !important;
 }
 
 .evotx_event {
@@ -434,8 +450,7 @@ button {
 }
 
 .cm-entry-summary a:hover {
-  color: #000 !important;
-  background-color: #af0000 !important;
+  background-color: #af0000;
 }
 
 .cm-front-page-top-section {
