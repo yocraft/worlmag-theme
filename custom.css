@@ -117,6 +117,13 @@
   text-transform: uppercase;
 }
 
+.woocommerce-form-login .woocommerce-LostPassword a {
+  text-decoration: underline;
+}
+.woocommerce-form-login .woocommerce-LostPassword a:hover {
+  background-color: transparent;
+}
+
 .the_champ_login_container {
   margin-bottom: 40px;
 }
