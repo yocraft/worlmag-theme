@@ -101,7 +101,7 @@
   margin-bottom: 16px;
 }
 .the_champ_social_login_title code {
-  font-family: "$secondary-font";
+  font-family: "Outfit";
   font-size: 18px;
   font-weight: 400;
 }
@@ -111,7 +111,7 @@
   margin: 0 auto;
 }
 .heateor_ss_sl_optin_container code label {
-  font-family: "$primary-font";
+  font-family: "Inter";
   font-size: 14px;
   text-wrap: balance;
 }
