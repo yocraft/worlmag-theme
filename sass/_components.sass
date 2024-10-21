@@ -41,7 +41,10 @@ button
   border-bottom: none !important
 
   li
-    padding: 0 16px
+    padding: 6px 16px
+
+    a
+      text-transform: uppercase !important
 
 .cm-primary-nav .cm-container
   width: 100%
@@ -66,7 +69,13 @@ button
 
 .cm-primary-nav ul li:hover > ul, .cm-primary-nav ul li.focus > ul
   left: 0
-  background-color: white
+  background-color: $white
+
+.search-wrap button
+  background-color: $red
+
+.fa.search-top:hover
+  background-color: $red
 
 // Buttons
 .cm-entry-button

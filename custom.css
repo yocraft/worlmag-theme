@@ -390,7 +390,10 @@ button {
   border-bottom: none !important;
 }
 #cm-primary-nav li {
-  padding: 0 16px;
+  padding: 6px 16px;
+}
+#cm-primary-nav li a {
+  text-transform: uppercase !important;
 }
 
 .cm-primary-nav .cm-container {
@@ -422,7 +425,15 @@ button {
 
 .cm-primary-nav ul li:hover > ul, .cm-primary-nav ul li.focus > ul {
   left: 0;
-  background-color: white;
+  background-color: #fff;
+}
+
+.search-wrap button {
+  background-color: #ff0000;
+}
+
+.fa.search-top:hover {
+  background-color: #ff0000;
 }
 
 .cm-entry-button {
