@@ -1305,7 +1305,8 @@ button {
   color: #fff;
 }
 
-.theChampCommentingTabs .comment-reply-title {
+.theChampCommentingTabs .comment-reply-title,
+.theChampCommentingTabs .logged-in-as {
   color: #fff;
 }
 .theChampCommentingTabs .theChampSelectedTab {
