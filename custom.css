@@ -212,25 +212,25 @@ input[type=submit]:hover,
   border-bottom: 1px solid #2b2b2e;
 }
 
-.ajde_evcal_calendar.boxy .eventon_list_event.hasbgimg,
-.ajde_evcal_calendar.boxy .boxy.boxstyle1 .evo_boxtop,
-.ajde_evcal_calendar.boxy .boxy.boxstyle2 .evo_boxtop,
-.ajde_evcal_calendar.boxy .boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig {
+.ajde_evcal_calendar .eventon_list_event.hasbgimg,
+.ajde_evcal_calendar .boxy.boxstyle1 .evo_boxtop,
+.ajde_evcal_calendar .boxy.boxstyle2 .evo_boxtop,
+.ajde_evcal_calendar .boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig {
   border-radius: 0 !important;
 }
-.ajde_evcal_calendar.boxy .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig {
+.ajde_evcal_calendar .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig {
   background-color: #161616 !important;
 }
-.ajde_evcal_calendar.boxy .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig .evcal_desc {
+.ajde_evcal_calendar .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig .evcal_desc {
   margin-bottom: 20px !important;
 }
-.ajde_evcal_calendar.boxy .evoShow_more_events {
+.ajde_evcal_calendar .evoShow_more_events {
   border-radius: 0;
 }
-.ajde_evcal_calendar.boxy .evo_events_list_box {
+.ajde_evcal_calendar .evo_events_list_box {
   gap: 20px;
 }
-.ajde_evcal_calendar.boxy .boxstyle1 .evo_boxtop {
+.ajde_evcal_calendar .boxy.boxstyle1 .evo_boxtop {
   margin: 0 !important;
 }
 
