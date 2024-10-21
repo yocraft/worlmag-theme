@@ -1300,3 +1300,15 @@ button {
 .cm-featured-posts .cm-first-post .cm-entry-title {
   font-size: 20px;
 }
+
+.wp-caption-text {
+  color: #fff;
+}
+
+.theChampCommentingTabs p {
+  color: #fff;
+}
+.theChampCommentingTabs .theChampSelectedTab {
+  color: #fff;
+  border-bottom: 2px solid #ff0000;
+}
