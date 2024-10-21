@@ -1305,7 +1305,7 @@ button {
   color: #fff;
 }
 
-.theChampCommentingTabs p {
+.theChampCommentingTabs .comment-reply-title {
   color: #fff;
 }
 .theChampCommentingTabs .theChampSelectedTab {
