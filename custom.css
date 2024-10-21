@@ -209,7 +209,7 @@ input[type=submit]:hover,
 }
 
 .cm-page-header .cm-page-title {
-  border-bottom: 2px solid #ff0000;
+  border-bottom: 1px solid #2b2b2e;
 }
 
 .ajde_evcal_calendar.boxy .eventon_list_event.hasbgimg,
@@ -433,7 +433,7 @@ button {
 }
 
 .fa.search-top:hover {
-  background-color: #ff0000;
+  background-color: transparent;
 }
 
 .cm-entry-button {
@@ -1287,6 +1287,10 @@ button {
 
 .video-description {
   padding: 20px 0;
+}
+
+.type-music {
+  border: 1px solid #2b2b2e;
 }
 
 .cm-row .music .cm-featured-image img {
