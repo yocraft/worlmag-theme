@@ -238,7 +238,7 @@ input[type=submit]:hover,
 }
 
 #evcal_list {
-  border: 1px solid #2b2b2e !important;
+  border: none !important;
 }
 #evcal_list .evcal_location,
 #evcal_list .evcal_location em {
