@@ -20,15 +20,17 @@ button
 .current-menu-parent
   background: none !important
 
-.cm-primary-nav ul li.current_page_item
-  background-color: transparent
+.cm-primary-nav ul li
+  .current_page_item,
+  .current-menu-item
+    background-color: transparent
 
 .cm-header-1 .cm-row
   display: none
 
 .dark-skin .cm-primary-nav ul > li > a,
 .dark-skin .cm-primary-nav ul ul.sub-menu li a
-  color: $black
+  color: $black !important
 
 .dark-skin .cm-primary-nav .current-menu-item a
   color: red

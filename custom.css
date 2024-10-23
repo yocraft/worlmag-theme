@@ -58,10 +58,6 @@
   margin-bottom: 20px;
 }
 
-.event_description .evocard_row {
-  border-bottom: solid 1px #333;
-}
-
 .evotx_view_ticket .fa-eye {
   display: none !important;
 }
@@ -383,7 +379,8 @@ button {
   background: none !important;
 }
 
-.cm-primary-nav ul li.current_page_item {
+.cm-primary-nav ul li .current_page_item,
+.cm-primary-nav ul li .current-menu-item {
   background-color: transparent;
 }
 
@@ -393,7 +390,7 @@ button {
 
 .dark-skin .cm-primary-nav ul > li > a,
 .dark-skin .cm-primary-nav ul ul.sub-menu li a {
-  color: #000;
+  color: #000 !important;
 }
 
 .dark-skin .cm-primary-nav .current-menu-item a {
@@ -1103,13 +1100,25 @@ button {
     min-width: 160px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .evocard_box {
+    margin: 10px 0 !important;
+  }
+}
 .top-full-width-sidebar {
   max-width: 100%;
   margin-top: -20px;
 }
 
 .cm-slider {
-  height: 100vh;
+  height: 600px;
+}
+.cm-slider .bx-viewport {
+  height: 600px;
+}
+.cm-slider .bx-viewport .cm-single-slide {
+  object-fit: cover;
+  object-position: top;
 }
 
 .widget_block .wp-block-separator {
@@ -1326,7 +1335,7 @@ button {
   margin-bottom: 24px;
 }
 
-.cm-post-content {
+.cm-posts {
   background-color: #161616;
 }
 
