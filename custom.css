@@ -1132,9 +1132,14 @@ button {
   }
 }
 
+@media (min-width: 992px) {
+  .cm-slider-area {
+    width: 65%;
+  }
+}
 @media (min-width: 1168px) {
   .cm-slider-area {
-    width: 92%;
+    width: 100%;
   }
 }
 
