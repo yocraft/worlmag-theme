@@ -17,6 +17,16 @@
           object-position: top
           height: 100vh
 
+.cm-front-page-top-section
+  @media (min-width: 992px)
+    gap: 30px
+
+.cm-slider-area
+  @media (min-width: 992px)
+
+  @media (min-width: 1168px)
+    width: 92%
+
 .widget_block
 
   .wp-block-separator
@@ -52,12 +62,14 @@
 .bx-controls
   display: none
 
-@media (min-width: 1024px)
-  .cm-primary
-    margin-right: 40px
+.cm-beside-slider-widget,
+.cm-secondary
+  @media (min-width: 992px)
+    margin-left: 20px
 
-  .cm-beside-slider-widget
-    padding-left: 40px !important
+// @media (min-width: 1024px)
+//   .cm-primary
+//     margin-right: 40px
 
 @media (min-width: 48em)
   #colormag_featured_posts_slider_widget-9
