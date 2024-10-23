@@ -1109,19 +1109,21 @@ button {
   max-width: 100%;
   margin-top: -20px;
 }
-
-.cm-slider {
+.top-full-width-sidebar .cm-slider {
   height: 600px;
 }
-.cm-slider .bx-viewport {
+.top-full-width-sidebar .cm-slider .bx-viewport {
   height: 600px !important;
 }
-.cm-slider .bx-viewport .cm-single-slide {
+.top-full-width-sidebar .cm-slider .bx-viewport .cm-single-slide {
   height: 600px;
 }
-.cm-slider .bx-viewport .cm-single-slide img {
-  object-fit: cover;
-  object-position: top;
+@media (max-width: 1088px) {
+  .top-full-width-sidebar .cm-slider .bx-viewport img {
+    object-fit: cover;
+    object-position: top;
+    height: 100vh;
+  }
 }
 
 .widget_block .wp-block-separator {
@@ -1178,7 +1180,7 @@ button {
     font-size: 5.4rem;
     text-transform: uppercase;
     text-wrap: balance;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
   #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-slide-content {
     padding: 24px 24px 68px;

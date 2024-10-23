@@ -2,18 +2,20 @@
   max-width: 100%
   margin-top: -20px
 
-.cm-slider
-  height: 600px
+  .cm-slider
+    height: 600px
 
-  .bx-viewport
-    height: 600px !important
+    .bx-viewport
+      height: 600px !important
 
-    .cm-single-slide
-      height: 600px
+      .cm-single-slide
+        height: 600px
+      @media (max-width: 1088px)
 
-      img
-        object-fit: cover
-        object-position: top
+        img
+          object-fit: cover
+          object-position: top
+          height: 100vh
 
 .widget_block
 
@@ -65,7 +67,7 @@
         font-size: 5.4rem
         text-transform: uppercase
         text-wrap: balance
-        margin-bottom: 100px
+        margin-bottom: 40px
 
       .cm-slide-content
         padding: 24px 24px 68px
