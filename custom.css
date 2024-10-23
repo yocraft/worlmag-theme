@@ -1116,6 +1116,9 @@ button {
 .cm-slider .bx-viewport {
   height: 600px !important;
 }
+.cm-slider .bx-viewport .cm-single-slide {
+  height: 600px;
+}
 .cm-slider .bx-viewport .cm-single-slide img {
   object-fit: cover;
   object-position: top;
