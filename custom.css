@@ -425,7 +425,7 @@ button {
   right: 60px;
 }
 .cm-menu-toggle svg {
-  fill: #000;
+  fill: #000 !important;
 }
 
 #cm-primary-nav {
