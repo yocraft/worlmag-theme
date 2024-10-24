@@ -475,12 +475,18 @@ button {
   text-transform: uppercase;
 }
 
-.cm-header .cm-mobile-nav li:hover {
-  background-color: #232323;
+.cm-mobile-nav li {
+  background-color: #232323 !important;
 }
-.cm-header .cm-mobile-nav li .current-menu-item,
-.cm-header .cm-mobile-nav li .current_page_item > a {
-  background-color: #161616;
+.cm-mobile-nav li:hover {
+  background-color: #232323 !important;
+}
+.cm-mobile-nav .menu-item .sub-menu li {
+  background-color: #232323 !important;
+}
+.cm-mobile-nav .menu-item .current-menu-item,
+.cm-mobile-nav .menu-item .current_page_item > a {
+  background-color: #232323;
 }
 
 .dark-skin .sub-menu li:hover {
