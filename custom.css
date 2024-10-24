@@ -1306,7 +1306,7 @@ button {
 .album-wrapper .cover-art {
   position: relative;
   height: 0;
-  padding-bottom: 56.25%;
+  padding-bottom: 100%;
   overflow: hidden;
 }
 .album-wrapper .cover-art img {
