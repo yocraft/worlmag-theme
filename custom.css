@@ -388,6 +388,10 @@ button {
   background-color: transparent !important;
 }
 
+.cm-primary-nav ul li.current_page_item {
+  background-color: transparent !important;
+}
+
 .cm-header-1 .cm-row {
   display: none;
 }
