@@ -476,6 +476,10 @@ button {
 }
 
 .cm-header .cm-mobile-nav li:hover {
+  background-color: #232323;
+}
+.cm-header .cm-mobile-nav li .current-menu-item,
+.cm-header .cm-mobile-nav li .current_page_item > a {
   background-color: #161616;
 }
 

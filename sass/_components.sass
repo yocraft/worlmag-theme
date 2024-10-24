@@ -101,8 +101,15 @@ button
 #menu-footer-tertiary a
   text-transform: uppercase
 
-.cm-header .cm-mobile-nav li:hover
-  background-color: $dark-grey
+.cm-header
+  .cm-mobile-nav
+    li
+      &:hover
+        background-color: #232323
+
+      .current-menu-item,
+      .current_page_item > a
+        background-color: $dark-grey
 
 .dark-skin
 
