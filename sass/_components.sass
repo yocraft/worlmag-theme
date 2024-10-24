@@ -28,7 +28,7 @@ button
 .cm-primary-nav ul li
   .current_page_item,
   .current-menu-item
-    background-color: transparent
+    background-color: transparent !important
 
 .cm-header-1 .cm-row
   display: none
@@ -38,7 +38,8 @@ button
   color: $black !important
 
 .dark-skin .cm-primary-nav .current-menu-item a
-  color: red
+  @media (min-width: 992px)
+    color: red !important
 
 #cm-primary-nav
   height: 70px

@@ -385,7 +385,7 @@ button {
 
 .cm-primary-nav ul li .current_page_item,
 .cm-primary-nav ul li .current-menu-item {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .cm-header-1 .cm-row {
@@ -397,8 +397,10 @@ button {
   color: #000 !important;
 }
 
-.dark-skin .cm-primary-nav .current-menu-item a {
-  color: red;
+@media (min-width: 992px) {
+  .dark-skin .cm-primary-nav .current-menu-item a {
+    color: red !important;
+  }
 }
 
 #cm-primary-nav {
