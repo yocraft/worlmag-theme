@@ -427,7 +427,8 @@ button {
 .cm-menu-toggle svg {
   fill: #000 !important;
 }
-.cm-menu-toggle .cm-icon {
+
+.menunav-menu .cm-icon {
   fill: #fff !important;
 }
 
