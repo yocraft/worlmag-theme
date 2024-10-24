@@ -428,10 +428,6 @@ button {
   fill: #000 !important;
 }
 
-.menunav-menu .cm-icon {
-  fill: #fff !important;
-}
-
 #cm-primary-nav {
   border-top: none;
 }
@@ -487,6 +483,9 @@ button {
 .cm-mobile-nav .menu-item .current-menu-item,
 .cm-mobile-nav .menu-item .current_page_item > a {
   background-color: #232323;
+}
+.cm-mobile-nav .cm-submenu-toggle .cm-icon {
+  fill: #fff !important;
 }
 
 .dark-skin .sub-menu li:hover {
