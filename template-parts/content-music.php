@@ -16,7 +16,31 @@ if (! defined('ABSPATH')) {
 $image_popup_id  = get_post_thumbnail_id();
 $image_popup_url = wp_get_attachment_url($image_popup_id);
 $featured_img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thumbnail');
+
+$music_player = get_field('music_player');
+
 ?>
+
+<?php
+$stream_link = get_field('stream_link');
+
+
+if ($stream_link):
+	$stream_url = $stream_link['url'];
+	$stream_title = $stream_link['title'];
+	$stream_target = $stream_link['target'] ? $stream_link['target'] : '_self';
+
+?>
+<?php endif; ?>
+
+<?php
+$download_link = get_field('download');
+if ($download_link):
+	$download_url = $download_link['url'];
+	$download_title = $download_link['title'];
+	$download_target = $download_link['target'] ? $download_link['target'] : '_self';
+?>
+<?php endif; ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?><?php echo colormag_schema_markup('entry'); // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped 
 																														?>>
@@ -104,6 +128,13 @@ $featured_img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thu
 		<?php if (get_field('album_info')): ?>
 			<p><?php echo wp_kses_post(get_field('album_info')); ?></p>
 		<?php endif; ?>
+
+
+		<?php if (get_field('music_player')): ?>
+			<?php echo $music_player; ?>
+		<?php endif; ?>
+
+
 		<?php if (get_field('tracklist')): ?>
 			<div class="album-wrapper">
 				<div class="cover-art" style="background-image: url('<?php echo $featured_img_url ?>')"></div>
@@ -113,9 +144,9 @@ $featured_img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'thu
 					<?php if (get_field('stream_link')): ?>
 						<h5>Stream and Download</h5>
 						<div class="links">
-							<a href"><button>Stream</button></a>
-							<?php if (get_field('stream_link')): ?>
-								<a href""><button>Download</button></a>
+							<a href="<?php echo esc_url($stream_url); ?>" target="<?php echo esc_attr($stream_target); ?>"><button>Stream</button></a>
+							<?php if (get_field('download')): ?>
+								<a href="<?php echo esc_url($download_url); ?>" target="<?php echo esc_attr($download_target); ?>"><button>Download</button></a>
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
