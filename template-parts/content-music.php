@@ -134,7 +134,14 @@ if ($download_link):
 
 		<?php if (get_field('tracklist')): ?>
 			<div class="album-wrapper">
-				<div class="cover-art" style="background-image: url('<?php echo $featured_img_url ?>')"></div>
+				<div class="player-wrapper">
+					<div class="cover-art" style="background-image: url('<?php echo $featured_img_url ?>')"></div>
+					<?php if (get_field('music_player')): ?>
+						<div class="music-player">
+							<?php echo $music_player; ?>
+						</div>
+					<?php endif; ?>
+				</div>
 				<div class="tracklist">
 					<h4>Tracklist</h4>
 					<?php echo wp_kses_post(get_field('tracklist')); ?>
@@ -150,11 +157,7 @@ if ($download_link):
 				</div>
 			</div>
 		<?php endif; ?>
-		<?php if (get_field('music_player')): ?>
-			<div class="music-player">
-				<?php echo $music_player; ?>
-			</div>
-		<?php endif; ?>
+
 
 
 
