@@ -427,6 +427,9 @@ button {
 .cm-menu-toggle svg {
   fill: #000 !important;
 }
+.cm-menu-toggle .cm-icon {
+  fill: #fff !important;
+}
 
 #cm-primary-nav {
   border-top: none;
@@ -469,6 +472,10 @@ button {
 
 #menu-footer-tertiary a {
   text-transform: uppercase;
+}
+
+.cm-header .cm-mobile-nav li:hover {
+  background-color: #161616;
 }
 
 .dark-skin .sub-menu li:hover {
