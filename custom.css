@@ -1304,11 +1304,18 @@ button {
   margin-bottom: 20px;
 }
 .album-wrapper .cover-art {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.album-wrapper .cover-art img {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-height: 360px;
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: 100%;
 }
 .album-wrapper .tracklist {
   width: 50%;
