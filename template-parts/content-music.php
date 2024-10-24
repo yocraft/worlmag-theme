@@ -130,9 +130,6 @@ if ($download_link):
 		<?php endif; ?>
 
 
-		<?php if (get_field('music_player')): ?>
-			<?php echo $music_player; ?>
-		<?php endif; ?>
 
 
 		<?php if (get_field('tracklist')): ?>
@@ -150,10 +147,15 @@ if ($download_link):
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
-
 				</div>
 			</div>
 		<?php endif; ?>
+		<?php if (get_field('music_player')): ?>
+			<div class="music-player">
+				<?php echo $music_player; ?>
+			</div>
+		<?php endif; ?>
+
 
 
 

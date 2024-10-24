@@ -1347,6 +1347,10 @@ button {
   border: 1px solid #2b2b2e;
 }
 
+.music-player {
+  margin-top: 50px;
+}
+
 .cm-row .music .cm-featured-image img {
   width: 100%;
   max-height: 250px;
