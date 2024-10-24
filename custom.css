@@ -424,6 +424,9 @@ button {
   position: absolute;
   right: 60px;
 }
+.cm-menu-toggle svg {
+  color: #000;
+}
 
 #cm-primary-nav {
   border-top: none;
