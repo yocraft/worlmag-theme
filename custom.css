@@ -1424,9 +1424,10 @@ button {
   border-bottom: 2px solid #ff0000;
 }
 
-.evoslider .eventon_list_event {
+.evoslider .ajde_evcal_calendar .eventon_list_event {
   background-color: #161616 !important;
 }
-.evoslider .eventon_list_event .evcal_list_a {
+
+.evoslider .ajde_evcal_calendar .eventon_list_event .evcal_list_a {
   background-color: #161616 !important;
 }
