@@ -1427,7 +1427,19 @@ button {
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event {
   background-color: #161616 !important;
 }
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_cblock {
+  align-items: center;
+}
 
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a {
   background-color: #161616 !important;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evoet_c2 {
+  width: 100%;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evoet_title {
+  font-size: 20px !important;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_time {
+  font-size: 14px !important;
 }
