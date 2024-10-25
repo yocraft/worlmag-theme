@@ -1403,6 +1403,10 @@ button {
   margin-bottom: 24px;
 }
 
+.dark-skin .cm-posts .post {
+  background-color: #161616;
+}
+
 .cm-featured-posts .cm-first-post .cm-entry-title {
   font-size: 20px;
 }
@@ -1418,4 +1422,11 @@ button {
 .theChampCommentingTabs .theChampSelectedTab {
   color: #fff;
   border-bottom: 2px solid #ff0000;
+}
+
+.evoslider .eventon_list_event {
+  background-color: #161616 !important;
+}
+.evoslider .eventon_list_event .evcal_list_a {
+  background-color: #161616 !important;
 }
