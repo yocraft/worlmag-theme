@@ -1444,6 +1444,7 @@ button {
   font-size: 14px !important;
   flex-wrap: wrap;
   flex-direction: column;
+  display: none !important;
 }
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_location {
   font-size: 14px !important;
@@ -1451,6 +1452,7 @@ button {
 }
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_oganizer {
   flex-direction: column;
+  display: none !important;
 }
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_oganizer em {
   color: #fff !important;
@@ -1461,4 +1463,8 @@ button {
 
 .evo_slider_slide_out {
   border-radius: 0 !important;
+}
+
+.evoslider.ajde_evcal_calendar.ss_imgtop.multiSlider .eventon_list_event.hasbgimg .evo_boxtop {
+  flex: 0 0 280px;
 }
