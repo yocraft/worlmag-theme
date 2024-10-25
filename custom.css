@@ -1458,3 +1458,7 @@ button {
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_oganizer em i {
   opacity: 0.7;
 }
+
+.evo_slider_slide_out {
+  border-radius: 0 !important;
+}
