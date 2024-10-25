@@ -1424,6 +1424,10 @@ button {
   border-bottom: 2px solid #ff0000;
 }
 
+.taxonomy-description {
+  color: #fff;
+}
+
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event {
   background-color: #161616 !important;
 }
