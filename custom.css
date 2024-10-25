@@ -1390,7 +1390,7 @@ button {
 
 .cm-row .music .cm-featured-image img {
   width: 100%;
-  max-height: 250px;
+  max-height: 340px;
   object-fit: cover;
 }
 
