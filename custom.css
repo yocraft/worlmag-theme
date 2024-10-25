@@ -1196,12 +1196,6 @@ button {
   padding-left: 0 !important;
 }
 
-@media (max-width: 991px) {
-  .cm-advertisement-content img {
-    width: 60%;
-  }
-}
-
 .cm-featured-category-slider .cm-below-entry-meta {
   display: none;
 }
