@@ -1226,15 +1226,21 @@ button {
 
 .home-ad-block {
   background-color: #fff;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 .home-ad-block h4 {
   text-transform: uppercase;
+  text-wrap: balance;
   color: #ff0000;
-  font-size: 20px;
+  font-size: 24px;
 }
 .home-ad-block p {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 600;
   color: #000;
 }
 .home-ad-block p span {
