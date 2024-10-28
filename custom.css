@@ -1224,6 +1224,23 @@ button {
   }
 }
 
+.home-ad-block {
+  background-color: #fff;
+  text-align: center;
+}
+.home-ad-block h4 {
+  text-transform: uppercase;
+  color: #ff0000;
+  font-size: 20px;
+}
+.home-ad-block p {
+  font-size: 14px;
+  color: #000;
+}
+.home-ad-block p span {
+  color: #ff0000;
+}
+
 @media (min-width: 48em) {
   #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-entry-title {
     width: 65%;
