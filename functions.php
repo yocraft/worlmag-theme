@@ -487,7 +487,7 @@ function include_custom_posts_in_category_archive($query)
     // Check if we're on a category archive page and it's the main query
     if ($query->is_category() && $query->is_main_query() && !is_admin()) {
         // Include the 'music' custom post type in the query
-        $query->set('post_type', array('post', 'music', 'news'));
+        $query->set('post_type', array('post', 'music', 'news', 'videos'));
     }
 }
 add_action('pre_get_posts', 'include_custom_posts_in_category_archive');
