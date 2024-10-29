@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Abstract widget class.
  *
@@ -8,7 +9,7 @@
  */
 
 // Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) ) {
+if (! defined('ABSPATH')) {
 	exit;
 }
 
@@ -19,7 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @extends  WP_Widget
  */
-abstract class ColorMag_Widget extends WP_Widget {
+abstract class ColorMag_Widget extends WP_Widget
+{
 
 	/**
 	 * CSS class.
@@ -73,7 +75,8 @@ abstract class ColorMag_Widget extends WP_Widget {
 	/**
 	 * Constructor.
 	 */
-	public function __construct() {
+	public function __construct()
+	{
 
 		$widget_options = array(
 			'classname'                   => $this->widget_cssclass,
@@ -81,7 +84,7 @@ abstract class ColorMag_Widget extends WP_Widget {
 			'customize_selective_refresh' => $this->customize_selective_refresh,
 		);
 
-		parent::__construct( $this->widget_id, $this->widget_name, $widget_options, $this->control_options );
+		parent::__construct($this->widget_id, $this->widget_name, $widget_options, $this->control_options);
 	}
 
 	/**
@@ -93,29 +96,30 @@ abstract class ColorMag_Widget extends WP_Widget {
 	 * @return array
 	 * @see    WP_Widget->update
 	 */
-	public function update( $new_instance, $old_instance ) {
+	public function update($new_instance, $old_instance)
+	{
 
 		$instance = $old_instance;
 
-		if ( empty( $this->settings ) ) {
+		if (empty($this->settings)) {
 			return $instance;
 		}
 
 		// Loop settings and get values to save.
-		foreach ( $this->settings as $key => $setting ) {
-			if ( ! isset( $setting['type'] ) ) {
+		foreach ($this->settings as $key => $setting) {
+			if (! isset($setting['type'])) {
 				continue;
 			}
 
 			// Format the value based on settings type.
-			switch ( $setting['type'] ) {
+			switch ($setting['type']) {
 
 				case 'url':
-					$instance[ $key ] = isset( $new_instance[ $key ] ) ? esc_url_raw( $new_instance[ $key ] ) : $setting['default'];
+					$instance[$key] = isset($new_instance[$key]) ? esc_url_raw($new_instance[$key]) : $setting['default'];
 					break;
 
 				case 'textarea':
-					$instance[ $key ] = wp_kses( trim( wp_unslash( $new_instance[ $key ] ) ), wp_kses_allowed_html( 'post' ) );
+					$instance[$key] = wp_kses(trim(wp_unslash($new_instance[$key])), wp_kses_allowed_html('post'));
 					break;
 
 				case 'image':
@@ -134,52 +138,52 @@ abstract class ColorMag_Widget extends WP_Widget {
 					);
 
 					// Return an array with file extension and mime_type.
-					$file = wp_check_filetype( $new_instance[ $key ], $mimes );
+					$file = wp_check_filetype($new_instance[$key], $mimes);
 
 					// If $new_instance[ $key ] has a valid mime_type, assign it to $instance[ $key ], otherwise, assign empty value to $instance[ $key ].
-					$instance[ $key ] = $file['ext'] ? $new_instance[ $key ] : $setting['default'];
+					$instance[$key] = $file['ext'] ? $new_instance[$key] : $setting['default'];
 					break;
 
 				case 'checkbox':
-					$instance[ $key ] = (
-						'1' == $new_instance[ $key ] || 'on' == $new_instance[ $key ]
-						) ? '1' : '0';
+					$instance[$key] = (
+						'1' == $new_instance[$key] || 'on' == $new_instance[$key]
+					) ? '1' : '0';
 					break;
 
 				case 'number':
-					$instance[ $key ] = is_numeric( $new_instance[ $key ] ) ? intval( $new_instance[ $key ] ) : $setting['default'];
+					$instance[$key] = is_numeric($new_instance[$key]) ? intval($new_instance[$key]) : $setting['default'];
 
-					if ( isset( $setting['input_attrs']['min'] ) && '' !== $setting['input_attrs']['min'] ) {
-						$instance[ $key ] = max( $instance[ $key ], $setting['input_attrs']['min'] );
+					if (isset($setting['input_attrs']['min']) && '' !== $setting['input_attrs']['min']) {
+						$instance[$key] = max($instance[$key], $setting['input_attrs']['min']);
 					}
 
-					if ( isset( $setting['input_attrs']['max'] ) && '' !== $setting['input_attrs']['max'] ) {
-						$instance[ $key ] = min( $instance[ $key ], $setting['input_attrs']['max'] );
+					if (isset($setting['input_attrs']['max']) && '' !== $setting['input_attrs']['max']) {
+						$instance[$key] = min($instance[$key], $setting['input_attrs']['max']);
 					}
 					break;
 
 				case 'radio':
 				case 'select':
-					$new_instance[ $key ] = sanitize_key( $new_instance[ $key ] );
+					$new_instance[$key] = sanitize_key($new_instance[$key]);
 					$available_choices    = $setting['choices'];
 
-					$instance[ $key ] = array_key_exists( $new_instance[ $key ], $available_choices ) ? $new_instance[ $key ] : $setting['default'];
+					$instance[$key] = array_key_exists($new_instance[$key], $available_choices) ? $new_instance[$key] : $setting['default'];
 					break;
 
 				case 'dropdown_categories':
-					$new_instance[ $key ] = ( '-1' == $new_instance[ $key ] ) ? '0' : absint( $new_instance[ $key ] );
+					$new_instance[$key] = ('-1' == $new_instance[$key]) ? '0' : absint($new_instance[$key]);
 
-					$instance[ $key ] = term_exists( $new_instance[ $key ], 'category' ) ? $new_instance[ $key ] : $setting['default'];
+					$instance[$key] = term_exists($new_instance[$key], 'category') ? $new_instance[$key] : $setting['default'];
 					break;
 
 				case 'dropdown_tags':
-					$new_instance[ $key ] = ( '-1' == $new_instance[ $key ] ) ? '0' : absint( $new_instance[ $key ] );
+					$new_instance[$key] = ('-1' == $new_instance[$key]) ? '0' : absint($new_instance[$key]);
 
-					$instance[ $key ] = term_exists( $new_instance[ $key ], 'post_tag' ) ? $new_instance[ $key ] : $setting['default'];
+					$instance[$key] = term_exists($new_instance[$key], 'post_tag') ? $new_instance[$key] : $setting['default'];
 					break;
 
 				case 'dropdown_users':
-					$new_instance[ $key ] = ( '-1' == $new_instance[ $key ] ) ? '0' : absint( $new_instance[ $key ] );
+					$new_instance[$key] = ('-1' == $new_instance[$key]) ? '0' : absint($new_instance[$key]);
 					$available_users      = array();
 					$all_author_users     = get_users(
 						array(
@@ -187,70 +191,69 @@ abstract class ColorMag_Widget extends WP_Widget {
 						)
 					);
 
-					foreach ( $all_author_users as $author_user ) {
-						$available_users[ $author_user->ID ] = $author_user->display_name;
+					foreach ($all_author_users as $author_user) {
+						$available_users[$author_user->ID] = $author_user->display_name;
 					}
 
-					$instance[ $key ] = array_key_exists( $new_instance[ $key ], $available_users ) ? $new_instance[ $key ] : $setting['default'];
+					$instance[$key] = array_key_exists($new_instance[$key], $available_users) ? $new_instance[$key] : $setting['default'];
 					break;
 
 				case 'checkboxes':
 					$saved_data       = array();
-					$instance[ $key ] = $new_instance[ $key ];
+					$instance[$key] = $new_instance[$key];
 
-					foreach ( $instance[ $key ] as $item => $value ) {
-						$saved_data[ $item ] = isset( $item ) ? 1 : 0;
+					foreach ($instance[$key] as $item => $value) {
+						$saved_data[$item] = isset($item) ? 1 : 0;
 					}
 
-					$instance[ $key ] = $saved_data;
+					$instance[$key] = $saved_data;
 					break;
 
 				case 'numbers':
 					$saved_data       = array();
-					$instance[ $key ] = $new_instance[ $key ];
+					$instance[$key] = $new_instance[$key];
 
-					foreach ( $instance[ $key ] as $item => $value ) {
-						$temp_data = is_numeric( $value ) ? intval( $value ) : $setting['default'][ $item ];
+					foreach ($instance[$key] as $item => $value) {
+						$temp_data = is_numeric($value) ? intval($value) : $setting['default'][$item];
 
-						if ( isset( $setting['input_attrs']['min'] ) && '' !== $setting['input_attrs']['min'] && ( $value < $setting['input_attrs']['min'] && ! $temp_data ) ) {
-							$temp_data = max( $value, $setting['input_attrs']['min'] );
+						if (isset($setting['input_attrs']['min']) && '' !== $setting['input_attrs']['min'] && ($value < $setting['input_attrs']['min'] && ! $temp_data)) {
+							$temp_data = max($value, $setting['input_attrs']['min']);
 						}
 
-						if ( isset( $setting['input_attrs']['max'] ) && '' !== $setting['input_attrs']['max'] && $value > $setting['input_attrs']['max'] ) {
-							$temp_data = min( $value, $setting['input_attrs']['max'] );
+						if (isset($setting['input_attrs']['max']) && '' !== $setting['input_attrs']['max'] && $value > $setting['input_attrs']['max']) {
+							$temp_data = min($value, $setting['input_attrs']['max']);
 						}
 
-						$saved_data[ $item ] = $temp_data;
+						$saved_data[$item] = $temp_data;
 					}
 
-					$instance[ $key ] = $saved_data;
+					$instance[$key] = $saved_data;
 					break;
 
 				case 'multiselect':
 					$selected_choices     = array();
 					$available_choices    = $setting['choices'];
-					$new_instance[ $key ] = isset( $new_instance[ $key ] ) ? $new_instance[ $key ] : array();
+					$new_instance[$key] = isset($new_instance[$key]) ? $new_instance[$key] : array();
 
-					foreach ( $new_instance[ $key ] as $selected_key => $selected_value ) {
+					foreach ($new_instance[$key] as $selected_key => $selected_value) {
 
-						if ( array_key_exists( $selected_value, $available_choices ) ) {
+						if (array_key_exists($selected_value, $available_choices)) {
 							$selected_choices[] = $selected_value;
 						}
 					}
 
-					$instance[ $key ] = $selected_choices;
+					$instance[$key] = $selected_choices;
 					break;
 
 				default:
-					$instance[ $key ] = isset( $new_instance[ $key ] ) ? sanitize_text_field( $new_instance[ $key ] ) : $setting['default'];
+					$instance[$key] = isset($new_instance[$key]) ? sanitize_text_field($new_instance[$key]) : $setting['default'];
 					break;
-
 			}
 
 			/**
 			 * Sanitize the value of a setting.
 			 */
-			$instance[ $key ] = apply_filters( 'colormag_widget_settings_sanitize_option', $instance[ $key ], $new_instance, $key, $setting );
+			$instance[$key] = apply_filters('colormag_widget_settings_sanitize_option', $instance[$key], $new_instance, $key, $setting);
 		}
 
 		return $instance;
@@ -263,260 +266,250 @@ abstract class ColorMag_Widget extends WP_Widget {
 	 *
 	 * @see   WP_Widget->form
 	 */
-	public function form( $instance ) {
+	public function form($instance)
+	{
 
-		if ( empty( $this->settings ) ) {
+		if (empty($this->settings)) {
 			return;
 		}
 
-		foreach ( $this->settings as $key => $setting ) {
+		foreach ($this->settings as $key => $setting) {
 
-			$class = isset( $setting['class'] ) ? $setting['class'] : '';
-			$value = isset( $instance[ $key ] ) ? $instance[ $key ] : $setting['default'];
+			$class = isset($setting['class']) ? $setting['class'] : '';
+			$value = isset($instance[$key]) ? $instance[$key] : $setting['default'];
 
-			switch ( $setting['type'] ) {
+			switch ($setting['type']) {
 
 				case 'text':
-					?>
+?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
 						<input type="text"
-								class="widefat <?php echo esc_attr( $class ); ?>"
-								id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>"
-								name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>"
-								value="<?php echo esc_attr( $value ); ?>"
-						/>
+							class="widefat <?php echo esc_attr($class); ?>"
+							id="<?php echo esc_attr($this->get_field_id($key)); ?>"
+							name="<?php echo esc_attr($this->get_field_name($key)); ?>"
+							value="<?php echo esc_attr($value); ?>" />
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'url':
-					?>
+				?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
 						<input type="url"
-								class="widefat <?php echo esc_attr( $class ); ?>"
-								id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>"
-								name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>"
-								value="<?php echo esc_attr( $value ); ?>"
-						/>
+							class="widefat <?php echo esc_attr($class); ?>"
+							id="<?php echo esc_attr($this->get_field_id($key)); ?>"
+							name="<?php echo esc_attr($this->get_field_name($key)); ?>"
+							value="<?php echo esc_attr($value); ?>" />
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'textarea':
-					?>
+				?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
-						<textarea class="widefat <?php echo esc_attr( $class ); ?>"
-									rows="5"
-									cols="20"
-									id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>"
-									name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>"
-						><?php echo esc_textarea( $value ); ?></textarea>
+						<textarea class="widefat <?php echo esc_attr($class); ?>"
+							rows="5"
+							cols="20"
+							id="<?php echo esc_attr($this->get_field_id($key)); ?>"
+							name="<?php echo esc_attr($this->get_field_name($key)); ?>"><?php echo esc_textarea($value); ?></textarea>
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'image':
-					?>
+				?>
 					<div class="media-uploader">
 						<p>
-							<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-								<?php echo esc_html( $setting['label'] ); ?>
+							<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+								<?php echo esc_html($setting['label']); ?>
 							</label>
 						</p>
 
-						<div class="media-uploader" id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
+						<div class="media-uploader" id="<?php echo esc_attr($this->get_field_id($key)); ?>">
 							<div class="custom_media_preview">
-								<?php if ( $value != '' ) : ?>
+								<?php if ($value != '') : ?>
 									<img class="custom_media_preview_default"
-										src="<?php echo esc_url( $value ); ?>"
-										style="max-width:100%;"
-									/>
+										src="<?php echo esc_url($value); ?>"
+										style="max-width:100%;" />
 								<?php endif; ?>
 							</div>
 
 							<input type="text"
-									class="widefat custom_media_input"
-									id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>"
-									name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>"
-									value="<?php echo esc_attr( $value ); ?>"
-									style="margin-top:5px;"
-							/>
+								class="widefat custom_media_input"
+								id="<?php echo esc_attr($this->get_field_id($key)); ?>"
+								name="<?php echo esc_attr($this->get_field_name($key)); ?>"
+								value="<?php echo esc_attr($value); ?>"
+								style="margin-top:5px;" />
 
 							<button class="custom_media_upload button button-secondary button-large"
-									id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>"
-									data-choose="<?php esc_attr_e( 'Choose an image', 'colormag' ); ?>"
-									data-update="<?php esc_attr_e( 'Use image', 'colormag' ); ?>"
-									style="width:100%;margin-top:6px;margin-right:30px;"
-							>
-								<?php esc_html_e( 'Select an Image', 'colormag' ); ?>
+								id="<?php echo esc_attr($this->get_field_id($key)); ?>"
+								data-choose="<?php esc_attr_e('Choose an image', 'colormag'); ?>"
+								data-update="<?php esc_attr_e('Use image', 'colormag'); ?>"
+								style="width:100%;margin-top:6px;margin-right:30px;">
+								<?php esc_html_e('Select an Image', 'colormag'); ?>
 							</button>
 						</div>
 					</div>
-					<?php
+				<?php
 					break;
 
 				case 'checkbox':
-					?>
+				?>
 					<p>
 						<input class="checkbox"
-								id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>"
-								name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>"
-								type="checkbox"
-							<?php echo esc_attr( ( $value == 1 ) ? 'checked' : '' ); ?>
-						/>
+							id="<?php echo esc_attr($this->get_field_id($key)); ?>"
+							name="<?php echo esc_attr($this->get_field_name($key)); ?>"
+							type="checkbox"
+							<?php echo esc_attr(($value == 1) ? 'checked' : ''); ?> />
 
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'number':
-					?>
+				?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
-						<input class="widefat <?php echo esc_attr( $class ); ?>"
-								id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>"
-								name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>"
-								type="number"
-								value="<?php echo esc_attr( $value ); ?>"
-							<?php if ( isset( $setting['input_attrs']['step'] ) ) { ?>
-								step="<?php echo esc_attr( $setting['input_attrs']['step'] ); ?>"
+						<input class="widefat <?php echo esc_attr($class); ?>"
+							id="<?php echo esc_attr($this->get_field_id($key)); ?>"
+							name="<?php echo esc_attr($this->get_field_name($key)); ?>"
+							type="number"
+							value="<?php echo esc_attr($value); ?>"
+							<?php if (isset($setting['input_attrs']['step'])) { ?>
+							step="<?php echo esc_attr($setting['input_attrs']['step']); ?>"
 							<?php } ?>
-							<?php if ( isset( $setting['input_attrs']['min'] ) ) { ?>
-								min="<?php echo esc_attr( $setting['input_attrs']['min'] ); ?>"
+							<?php if (isset($setting['input_attrs']['min'])) { ?>
+							min="<?php echo esc_attr($setting['input_attrs']['min']); ?>"
 							<?php } ?>
-							<?php if ( isset( $setting['input_attrs']['max'] ) ) { ?>
-								max="<?php echo esc_attr( $setting['input_attrs']['max'] ); ?>"
-							<?php } ?>
-						/>
+							<?php if (isset($setting['input_attrs']['max'])) { ?>
+							max="<?php echo esc_attr($setting['input_attrs']['max']); ?>"
+							<?php } ?> />
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'radio':
-					?>
+				?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
 						<?php
 						$count = 1;
-						foreach ( $setting['choices'] as $choices_key => $choices_value ) {
-							if ( 1 !== $count ) {
+						foreach ($setting['choices'] as $choices_key => $choices_value) {
+							if (1 !== $count) {
 								echo '<br />';
 							}
-							?>
+						?>
 
 							<input type="radio"
-									id="<?php echo esc_attr( $this->get_field_id( $choices_key ) ); ?>"
-									name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>"
-									value="<?php echo esc_attr( $choices_key ); ?>"
-								<?php echo esc_attr( ( $choices_key == $value ) ? 'checked' : '' ); ?>
-							/>
+								id="<?php echo esc_attr($this->get_field_id($choices_key)); ?>"
+								name="<?php echo esc_attr($this->get_field_name($key)); ?>"
+								value="<?php echo esc_attr($choices_key); ?>"
+								<?php echo esc_attr(($choices_key == $value) ? 'checked' : ''); ?> />
 
-							<label for="<?php echo esc_attr( $this->get_field_id( $choices_key ) ); ?>">
-								<?php echo esc_html( $choices_value ); ?>
+							<label for="<?php echo esc_attr($this->get_field_id($choices_key)); ?>">
+								<?php echo esc_html($choices_value); ?>
 							</label>
-							<?php
+						<?php
 							++$count;
 						}
 						?>
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'select':
-					?>
+				?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
-						<select class="widefat <?php echo esc_attr( $class ); ?>"
-								id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>"
-								name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>"
-						>
-							<?php foreach ( $setting['choices'] as $choices_key => $choices_value ) { ?>
-								<option value="<?php echo esc_attr( $choices_key ); ?>"
-									<?php selected( $choices_key, $value ); ?>
-								>
-									<?php echo esc_html( $choices_value ); ?>
+						<select class="widefat <?php echo esc_attr($class); ?>"
+							id="<?php echo esc_attr($this->get_field_id($key)); ?>"
+							name="<?php echo esc_attr($this->get_field_name($key)); ?>">
+							<?php foreach ($setting['choices'] as $choices_key => $choices_value) { ?>
+								<option value="<?php echo esc_attr($choices_key); ?>"
+									<?php selected($choices_key, $value); ?>>
+									<?php echo esc_html($choices_value); ?>
 								</option>
 							<?php } ?>
 						</select>
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'custom':
-					?>
+				?>
 					<div class="custom">
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
 							<?php
 							echo $setting['label']; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 							?>
 						</label>
 
-						<?php if ( isset( $setting['image_url'] ) ) { ?>
+						<?php if (isset($setting['image_url'])) { ?>
 							<div style="text-align: center;">
-								<img src="<?php echo esc_url( $setting['image_url'] ); ?>" alt="" />
+								<img src="<?php echo esc_url($setting['image_url']); ?>" alt="" />
 							</div>
 						<?php } ?>
 					</div>
-					<?php
+				<?php
 					break;
 
 				case 'dropdown_categories':
-					?>
+				?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
 						<?php
 						wp_dropdown_categories(
 							array(
 								'show_option_none' => ' ',
-								'name'             => $this->get_field_name( $key ),
+								'name'             => $this->get_field_name($key),
 								'selected'         => $value,
 								'class'            => 'widefat postform',
 							)
 						);
 						?>
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'dropdown_tags':
-					?>
+				?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
 						<?php
 						wp_dropdown_categories(
 							array(
 								'show_option_none' => ' ',
-								'name'             => $this->get_field_name( $key ),
+								'name'             => $this->get_field_name($key),
 								'selected'         => $value,
 								'taxonomy'         => 'post_tag',
 								'class'            => 'widefat postform',
@@ -524,21 +517,21 @@ abstract class ColorMag_Widget extends WP_Widget {
 						);
 						?>
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'dropdown_users':
-					?>
+				?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
 						<?php
 						wp_dropdown_users(
 							array(
 								'show_option_none' => ' ',
-								'name'             => $this->get_field_name( $key ),
+								'name'             => $this->get_field_name($key),
 								'selected'         => $value,
 								'orderby'          => 'name',
 								'order'            => 'ASC',
@@ -548,73 +541,69 @@ abstract class ColorMag_Widget extends WP_Widget {
 						);
 						?>
 					</p>
-					<?php
+				<?php
 					break;
 
 				case 'separator':
-					?>
+				?>
 					<hr />
-					<?php
+				<?php
 					break;
 
 				case 'checkboxes':
-					?>
-					<h3><?php echo esc_html( $setting['label'] ); ?></h3>
+				?>
+					<h3><?php echo esc_html($setting['label']); ?></h3>
 
 					<p>
-						<?php foreach ( $setting['choices'] as $choices_key => $choices_value ) { ?>
+						<?php foreach ($setting['choices'] as $choices_key => $choices_value) { ?>
 							<label class="alignleft"
-									style="width:50%;display:block;margin-bottom:5px"
-									for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>_<?php echo esc_attr( $choices_key ); ?>"
-							>
+								style="width:50%;display:block;margin-bottom:5px"
+								for="<?php echo esc_attr($this->get_field_id($key)); ?>_<?php echo esc_attr($choices_key); ?>">
 
 								<input type="checkbox"
-										id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>_<?php echo esc_attr( $choices_key ); ?>"
-										name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>[<?php echo esc_attr( $choices_key ); ?>]"
-										value="1"
+									id="<?php echo esc_attr($this->get_field_id($key)); ?>_<?php echo esc_attr($choices_key); ?>"
+									name="<?php echo esc_attr($this->get_field_name($key)); ?>[<?php echo esc_attr($choices_key); ?>]"
+									value="1"
 									<?php
-									if ( isset( $value[ $choices_key ] ) ) {
-										checked( 1, $value[ $choices_key ], true );
+									if (isset($value[$choices_key])) {
+										checked(1, $value[$choices_key], true);
 									}
-									?>
-								/>
+									?> />
 
-								<?php echo esc_html( $choices_value ); ?>
+								<?php echo esc_html($choices_value); ?>
 							</label>
 						<?php } ?>
 					</p>
 
 					<div class="clear"></div>
-					<?php
+				<?php
 					break;
 
 				case 'numbers':
-					?>
-					<h3><?php echo esc_html( $setting['label'] ); ?></h3>
+				?>
+					<h3><?php echo esc_html($setting['label']); ?></h3>
 
 					<p>
-						<?php foreach ( $setting['choices'] as $choices_key => $choices_value ) { ?>
+						<?php foreach ($setting['choices'] as $choices_key => $choices_value) { ?>
 							<label class="alignleft"
-									style="width:50%;display:block;margin-bottom:5px"
-									for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>_<?php echo esc_attr( $choices_key ); ?>"
-							>
+								style="width:50%;display:block;margin-bottom:5px"
+								for="<?php echo esc_attr($this->get_field_id($key)); ?>_<?php echo esc_attr($choices_key); ?>">
 
 								<input type="number"
-										id="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>_<?php echo esc_attr( $choices_key ); ?>"
-										name="<?php echo esc_attr( $this->get_field_name( $key ) ); ?>[<?php echo esc_attr( $choices_key ); ?>]"
-										value="<?php echo esc_attr( $value[ $choices_key ] ); ?>"
-									<?php if ( isset( $setting['input_attrs']['step'] ) ) { ?>
-										step="<?php echo esc_attr( $setting['input_attrs']['step'] ); ?>"
+									id="<?php echo esc_attr($this->get_field_id($key)); ?>_<?php echo esc_attr($choices_key); ?>"
+									name="<?php echo esc_attr($this->get_field_name($key)); ?>[<?php echo esc_attr($choices_key); ?>]"
+									value="<?php echo esc_attr($value[$choices_key]); ?>"
+									<?php if (isset($setting['input_attrs']['step'])) { ?>
+									step="<?php echo esc_attr($setting['input_attrs']['step']); ?>"
 									<?php } ?>
-									<?php if ( isset( $setting['input_attrs']['min'] ) ) { ?>
-										min="<?php echo esc_attr( $setting['input_attrs']['min'] ); ?>"
+									<?php if (isset($setting['input_attrs']['min'])) { ?>
+									min="<?php echo esc_attr($setting['input_attrs']['min']); ?>"
 									<?php } ?>
-									<?php if ( isset( $setting['input_attrs']['max'] ) ) { ?>
-										max="<?php echo esc_attr( $setting['input_attrs']['max'] ); ?>"
-									<?php } ?>
-								/>
+									<?php if (isset($setting['input_attrs']['max'])) { ?>
+									max="<?php echo esc_attr($setting['input_attrs']['max']); ?>"
+									<?php } ?> />
 
-								<?php echo esc_html( $choices_value ); ?>
+								<?php echo esc_html($choices_value); ?>
 							</label>
 						<?php } ?>
 					</p>
@@ -626,63 +615,63 @@ abstract class ColorMag_Widget extends WP_Widget {
 				case 'api_key':
 					$api_key = $setting['api_key'];
 
-					if ( ! $api_key ) {
+					if (! $api_key) {
 						$query['autofocus[control]'] = $setting['customize_control'];
-						$control_link                = add_query_arg( $query, admin_url( 'customize.php' ) );
-						?>
+						$control_link                = add_query_arg($query, admin_url('customize.php'));
+					?>
 						<p>
-							<span class="<?php echo esc_attr( $setting['class'] ); ?>-error">
-								<?php echo $setting['description']; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>
+							<span class="<?php echo esc_attr($setting['class']); ?>-error">
+								<?php echo $setting['description']; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped 
+								?>
 								<br />
-								<a href="<?php echo esc_url( $control_link ); ?>"><?php echo esc_html( $setting['label'] ); ?></a>
+								<a href="<?php echo esc_url($control_link); ?>"><?php echo esc_html($setting['label']); ?></a>
 							</span>
 						</p>
-						<?php
+					<?php
 					}
 					break;
 
 				case 'multiselect':
 					?>
 					<p>
-						<label for="<?php echo esc_attr( $this->get_field_id( $key ) ); ?>">
-							<?php echo esc_html( $setting['label'] ); ?>
+						<label for="<?php echo esc_attr($this->get_field_id($key)); ?>">
+							<?php echo esc_html($setting['label']); ?>
 						</label>
 
 						<?php
 						printf(
 							/* Translators: 1. Field name, 2. Field id, 3. Custom style declaration */
 							'<select multiple="multiple" name="%s[]" id="%s" %s>',
-							esc_attr( $this->get_field_name( $key ) ),
-							esc_attr( $this->get_field_id( $key ) ),
+							esc_attr($this->get_field_name($key)),
+							esc_attr($this->get_field_id($key)),
 							'style="width:100%"'
 						);
 
-						$available_values = ! empty( $value ) ? $value : array();
+						$available_values = ! empty($value) ? $value : array();
 
-						foreach ( $setting['choices'] as $choices_key => $choices_value ) {
-							?>
-							<option value="<?php echo esc_attr( $choices_key ); ?>"
+						foreach ($setting['choices'] as $choices_key => $choices_value) {
+						?>
+							<option value="<?php echo esc_attr($choices_key); ?>"
 								<?php
-								if ( in_array( $choices_key, $available_values, true ) ) {
+								if (in_array($choices_key, $available_values, true)) {
 									echo ' selected="selected"';
 								}
-								?>
-							>
-								<?php echo esc_html( $choices_value ); ?>
+								?>>
+								<?php echo esc_html($choices_value); ?>
 							</option>
-							<?php
+						<?php
 						}
 
 						echo '</select>';
 						?>
 
 					</p>
-					<?php
+		<?php
 					break;
 
-				// Default: run an action.
+					// Default: run an action.
 				default:
-					do_action( 'colormag_widget_field_' . $setting['type'], $key, $value, $setting, $instance );
+					do_action('colormag_widget_field_' . $setting['type'], $key, $value, $setting, $instance);
 					break;
 			}
 		}
@@ -693,7 +682,8 @@ abstract class ColorMag_Widget extends WP_Widget {
 	 *
 	 * @param array $args Arguments.
 	 */
-	public function widget_start( $args ) {
+	public function widget_start($args)
+	{
 		echo $args['before_widget']; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 	}
 
@@ -702,7 +692,8 @@ abstract class ColorMag_Widget extends WP_Widget {
 	 *
 	 * @param array $args Arguments.
 	 */
-	public function widget_end( $args ) {
+	public function widget_end($args)
+	{
 		echo $args['after_widget']; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 	}
 
@@ -714,29 +705,30 @@ abstract class ColorMag_Widget extends WP_Widget {
 	 * @param int    $category        The category id of the widget setting.
 	 * @param string $view_all_button View all button data of the widget.
 	 */
-	public function widget_title( $title, $type, $category, $view_all_button ) {
+	public function widget_title($title, $type, $category, $view_all_button)
+	{
 
 		// Return if $title is empty.
-		if ( ! $title ) {
+		if (! $title) {
 			return;
 		}
 
 		$border_color   = '';
 		$title_color    = '';
-		$category_color = colormag_category_color( $category );
-		if ( 'latest' != $type && $category_color ) {
+		$category_color = colormag_category_color($category);
+		if ('latest' != $type && $category_color) {
 			$border_color = 'style="border-bottom-color:' . $category_color . ';"';
 			$title_color  = 'style="background-color:' . $category_color . ';"';
 		}
 
 		// Assign the view all link to be displayed in the widget title.
 		$category_link = '';
-		if ( 'true' == $view_all_button && ( ! empty( $category ) && 'latest' != $type ) ) {
-			$category_link = '<a href="' . esc_url( get_category_link( $category ) ) . '" class="cm-view-all-link">' . esc_html( get_theme_mod( 'colormag_view_all_text', __( 'View All', 'colormag' ) ) ) . '</a>';
+		if ('true' == $view_all_button && (! empty($category) && 'latest' != $type)) {
+			$category_link = '<a href="' . esc_url(get_category_link($category)) . '" class="cm-view-all-link">' . esc_html(get_theme_mod('colormag_view_all_text', __('View All', 'colormag'))) . '</a>';
 		}
 
 		// Display the title.
-		echo '<' . apply_filters( 'colormag_widget_title_markup', 'h3' ) . ' class="cm-widget-title" ' . $border_color . '><span ' . $title_color . '>' . esc_html( $title ) . '</span>' . $category_link . '</' . apply_filters( 'colormag_widget_title_markup', 'h3' ) . '>'; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		echo '<' . apply_filters('colormag_widget_title_markup', 'h3') . ' class="cm-widget-title" ' . $border_color . '><span ' . $title_color . '>' . esc_html($title) . '</span>' . $category_link . '</' . apply_filters('colormag_widget_title_markup', 'h3') . '>'; // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
 	}
 
 	/**
@@ -744,14 +736,15 @@ abstract class ColorMag_Widget extends WP_Widget {
 	 *
 	 * @param string $text The widget description.
 	 */
-	public function widget_description( $text ) {
+	public function widget_description($text)
+	{
 
 		// Return if $text is empty.
-		if ( ! $text ) {
+		if (! $text) {
 			return;
 		}
 
-		echo '<p>' . wp_kses_post( $text ) . '</p>';
+		echo '<p>' . wp_kses_post($text) . '</p>';
 	}
 
 	/**
@@ -768,56 +761,57 @@ abstract class ColorMag_Widget extends WP_Widget {
 	 *
 	 * @return \WP_Query
 	 */
-	public function query_posts( $number, $type, $category, $tag, $author, $random_posts, $child_category, $video_post_format_args = false ) {
+	public function query_posts($number, $type, $category, $tag, $author, $random_posts, $child_category, $video_post_format_args = false)
+	{
 
 		// Adding the excluding post function.
 		$post__not_in = colormag_exclude_duplicate_posts();
 
 		$args = array(
 			'posts_per_page'      => $number,
-			'post_type'           => 'post',
+			'post_type'           => $type,
 			'ignore_sticky_posts' => true,
 			'no_found_rows'       => true,
 			'post__not_in'        => $post__not_in,
 		);
 
 		// Displays from tag chosen.
-		if ( 'tag' == $type ) {
+		if ('tag' == $type) {
 			$args['tag__in'] = $tag;
 		}
 
 		// Displays from author chosen.
-		if ( 'author' == $type ) {
+		if ('author' == $type) {
 			$args['author__in'] = $author;
 		}
 
 		// Display from category chosen.
-		if ( 'category' == $type && 'false' == $child_category ) {
+		if ('category' == $type && 'false' == $child_category) {
 			$args['category__in'] = $category;
 		}
 
 		// Displays random posts.
-		if ( 'true' == $random_posts ) {
+		if ('true' == $random_posts) {
 			$args['orderby'] = 'rand';
 		}
 
 		// Displays post from parent as well as child category.
-		if ( 'category' == $type && 'true' == $child_category ) {
+		if ('category' == $type && 'true' == $child_category) {
 			$args['cat'] = $category;
 		}
 
 		// Displays the posts from video post format.
-		if ( $video_post_format_args ) {
+		if ($video_post_format_args) {
 			$args['tax_query'] = array(
 				array(
 					'taxonomy' => 'post_format',
 					'field'    => 'slug',
-					'terms'    => array( 'post-format-video' ),
+					'terms'    => array('post-format-video'),
 				),
 			);
 		}
 
-		$get_featured_posts = new WP_Query( $args );
+		$get_featured_posts = new WP_Query($args);
 
 		return $get_featured_posts;
 	}
@@ -825,14 +819,15 @@ abstract class ColorMag_Widget extends WP_Widget {
 	/**
 	 * Displays the post title within the widgets.
 	 */
-	public function the_title() {
-		echo '<' . apply_filters( 'colormag_front_page_widget_post_title_markup', 'h3' ) . ' class="cm-entry-title">'
+	public function the_title()
+	{
+		echo '<' . apply_filters('colormag_front_page_widget_post_title_markup', 'h3') . ' class="cm-entry-title">'
 		?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-			<?php echo wp_kses_post( colormag_get_the_title( get_the_title() ) ); ?>
-			</a>
-		<?php
-		echo '</' . apply_filters( 'colormag_front_page_widget_post_title_markup', 'h3' ) . '>';
+		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+			<?php echo wp_kses_post(colormag_get_the_title(get_the_title())); ?>
+		</a>
+<?php
+		echo '</' . apply_filters('colormag_front_page_widget_post_title_markup', 'h3') . '>';
 	}
 
 	/**
@@ -843,29 +838,30 @@ abstract class ColorMag_Widget extends WP_Widget {
 	 * @param string $figure_class The class for featured image display.
 	 * @param bool   $link_enable  The option to link the featured image to post link.
 	 */
-	public function the_post_thumbnail( $post_id, $size = '', $link_enable = true ) {
+	public function the_post_thumbnail($post_id, $size = '', $link_enable = true)
+	{
 
 		$image           = '';
-		$thumbnail_id    = get_post_thumbnail_id( $post_id );
-		$image_alt_text  = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
-		$title_attribute = get_the_title( $post_id );
-		$image_alt_text  = empty( $image_alt_text ) ? $title_attribute : $image_alt_text;
+		$thumbnail_id    = get_post_thumbnail_id($post_id);
+		$image_alt_text  = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+		$title_attribute = get_the_title($post_id);
+		$image_alt_text  = empty($image_alt_text) ? $title_attribute : $image_alt_text;
 
-		if ( $link_enable ) {
-			$image .= '<a href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0' ) . '">';
+		if ($link_enable) {
+			$image .= '<a href="' . esc_url(get_permalink()) . '" title="' . the_title_attribute('echo=0') . '">';
 		}
 
 		$image .= get_the_post_thumbnail(
 			$post_id,
 			$size,
 			array(
-				'title' => esc_attr( $title_attribute ),
-				'alt'   => esc_attr( $image_alt_text ),
+				'title' => esc_attr($title_attribute),
+				'alt'   => esc_attr($image_alt_text),
 			)
 		);
 
-		if ( $link_enable ) {
-			if ( has_post_format( 'video' ) ) {
+		if ($link_enable) {
+			if (has_post_format('video')) {
 				$image .= '<span class="play-button-wrapper">
 								<i class="fa fa-play" aria-hidden="true"></i>
 							</span>';
@@ -882,7 +878,8 @@ abstract class ColorMag_Widget extends WP_Widget {
 	/**
 	 * Displays the post meta within the widgets.
 	 */
-	public function entry_meta() {
+	public function entry_meta()
+	{
 
 		$meta_orders = get_theme_mod(
 			'colormag_post_meta_structure',
@@ -894,28 +891,28 @@ abstract class ColorMag_Widget extends WP_Widget {
 		);
 
 		$human_diff_time = '';
-		if ( 'style-2' == get_theme_mod( 'colormag_post_meta_date_style', 'style-1' ) ) {
+		if ('style-2' == get_theme_mod('colormag_post_meta_date_style', 'style-1')) {
 			$human_diff_time = 'human-diff-time';
 		}
 
-		echo '<div class="cm-below-entry-meta ' . esc_attr( $human_diff_time ) . '">';
+		echo '<div class="cm-below-entry-meta ' . esc_attr($human_diff_time) . '">';
 
-		foreach ( $meta_orders as $key => $meta_order ) {
+		foreach ($meta_orders as $key => $meta_order) {
 
-			if ( 'date' === $meta_order ) {
+			if ('date' === $meta_order) {
 				colormag_date_meta_markup();
 			}
 
-			if ( 'author' === $meta_order ) {
+			if ('author' === $meta_order) {
 				colormag_author_meta_markup();
 			}
 
-			if ( 'comments' === $meta_order ) {
-				colormag_comment_meta_markup( true );
+			if ('comments' === $meta_order) {
+				colormag_comment_meta_markup(true);
 			}
 
-			if ( 'read-time' === $meta_order ) {
-				colormag_read_time_meta_markup( true, false );
+			if ('read-time' === $meta_order) {
+				colormag_read_time_meta_markup(true, false);
 			}
 		}
 
