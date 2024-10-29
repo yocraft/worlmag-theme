@@ -769,7 +769,7 @@ abstract class ColorMag_Widget extends WP_Widget
 
 		$args = array(
 			'posts_per_page'      => $number,
-			'post_type'           => $type,
+			'post_type'           => 'post',
 			'ignore_sticky_posts' => true,
 			'no_found_rows'       => true,
 			'post__not_in'        => $post__not_in,

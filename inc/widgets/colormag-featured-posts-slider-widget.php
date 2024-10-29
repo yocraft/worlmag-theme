@@ -149,7 +149,7 @@ class colormag_featured_posts_slider_widget extends ColorMag_Widget
 
 		global $post;
 		$number         = empty($instance['number']) ? 4 : $instance['number'];
-		$type						= array('post', 'music', 'news', 'videos');
+		$type           = isset($instance['type']) ? $instance['type'] : 'latest';
 		$category       = isset($instance['category']) ? $instance['category'] : '';
 		$image_size     = isset($instance['image_size']) ? $instance['image_size'] : 'medium';
 		$random_posts   = ! empty($instance['random_posts']) ? 'true' : 'false';
@@ -162,9 +162,6 @@ class colormag_featured_posts_slider_widget extends ColorMag_Widget
 		$slider_auto    = ! empty($instance['slider_auto']) ? 'false' : 'true';
 		$slider_hover   = ! empty($instance['slider_hover']) ? 'true' : 'false';
 		$post_details   = ! empty($instance['post_details']) ? true : false;
-
-
-
 
 		// Create the posts query.
 		$get_featured_posts = $this->query_posts($number, $type, $category, $tag, $author, $random_posts, $child_category);
