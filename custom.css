@@ -1248,6 +1248,13 @@ button {
   color: #ff0000;
 }
 
+.wp-block-columns {
+  align-items: flex-start;
+}
+.wp-block-columns .cm-post img {
+  max-height: 350px;
+}
+
 @media (min-width: 48em) {
   #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-entry-title {
     width: 65%;
