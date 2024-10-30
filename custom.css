@@ -1511,6 +1511,10 @@ button {
   flex: 0 0 280px !important;
 }
 
+.evoslider .eventon_events_list {
+  gap: 20px;
+}
+
 .type-videos {
   border: 1px solid #2b2b2e;
   background-color: #161616;
