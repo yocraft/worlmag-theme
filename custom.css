@@ -244,39 +244,39 @@ input[type=submit]:hover,
   opacity: 1 !important;
 }
 
-#evcal_list {
+#home-page #evcal_list {
   border: none !important;
 }
-#evcal_list .evcal_location,
-#evcal_list .evcal_location em {
+#home-page #evcal_list .evcal_location,
+#home-page #evcal_list .evcal_location em {
   color: #fff !important;
   font-size: 14px !important;
   margin-top: 14px;
   text-wrap: balance;
 }
-#evcal_list .evcal_oganizer {
+#home-page #evcal_list .evcal_oganizer {
   justify-content: center;
 }
-#evcal_list .evcal_oganizer em i {
+#home-page #evcal_list .evcal_oganizer em i {
   color: #fff !important;
 }
-#evcal_list .evcal_time {
+#home-page #evcal_list .evcal_time {
   font-size: 14px !important;
   flex-direction: column;
 }
-#evcal_list .evo_start {
+#home-page #evcal_list .evo_start {
   display: flex !important;
   flex-direction: row !important;
   gap: 5px;
   align-items: center;
 }
-#evcal_list .evoet_dayblock {
+#home-page #evcal_list .evoet_dayblock {
   width: 300px !important;
 }
-#evcal_list .evoet_cx {
+#home-page #evcal_list .evoet_cx {
   margin-right: 0px !important;
 }
-#evcal_list .evoet_title {
+#home-page #evcal_list .evoet_title {
   font-size: 20px !important;
   line-height: 28px !important;
   text-wrap: balance !important;
@@ -284,20 +284,20 @@ input[type=submit]:hover,
   width: 320px;
   padding-bottom: 16px !important;
 }
-#evcal_list .evoet_title .evo_endday {
+#home-page #evcal_list .evoet_title .evo_endday {
   display: none;
 }
-#evcal_list .eventon_list_event .evoet_cx em,
-#evcal_list .evo_lightboxes .evoet_cx em {
+#home-page #evcal_list .eventon_list_event .evoet_cx em,
+#home-page #evcal_list .evo_lightboxes .evoet_cx em {
   color: #fff;
 }
-#evcal_list .evcal_oganizer {
+#home-page #evcal_list .evcal_oganizer {
   margin-top: 10px;
 }
-#evcal_list .evcal_oganizer .evoet_dataval {
+#home-page #evcal_list .evcal_oganizer .evoet_dataval {
   color: #fff !important;
 }
-#evcal_list .eventon_list_event a:hover {
+#home-page #evcal_list .eventon_list_event a:hover {
   border: 0 !important;
 }
 
