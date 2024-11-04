@@ -15,8 +15,22 @@
   .evoShow_more_events
     border-radius: 0
 
-  .evo_events_list_box
-    gap: 20px
+.evo_events_list_box
+  // gap: 20px
+
+  > div
+    border: none !important
+
+  .evo_eventtop .evcal_list_a
+    background-color: $dark-grey !important
+    flex-direction: row
+
+    .evo_start
+      flex-direction: column !important
+
+    .evcal_desc,
+    .evoet_time_expand
+      align-items: flex-start !important
 
 .ajde_evcal_calendar.boxy.boxstyle1 .evo_boxtop
   margin: 0 !important
@@ -128,6 +142,6 @@
 .widget .eventon_events_list .eventon_list_event .evoet_cx
   margin-bottom: 40px
 
-@media only screen and (min-width: 768px)
-  #evcal_list
-    max-width: 800px !important
+// @media only screen and (min-width: 768px)
+//   #evcal_list
+//     max-width: 800px !important

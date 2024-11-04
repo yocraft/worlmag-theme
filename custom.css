@@ -227,8 +227,20 @@ input[type=submit]:hover,
 .ajde_evcal_calendar .evoShow_more_events {
   border-radius: 0;
 }
-.ajde_evcal_calendar .evo_events_list_box {
-  gap: 20px;
+
+.evo_events_list_box > div {
+  border: none !important;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a {
+  background-color: #161616 !important;
+  flex-direction: row;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a .evo_start {
+  flex-direction: column !important;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a .evcal_desc,
+.evo_events_list_box .evo_eventtop .evcal_list_a .evoet_time_expand {
+  align-items: flex-start !important;
 }
 
 .ajde_evcal_calendar.boxy.boxstyle1 .evo_boxtop {
@@ -350,11 +362,6 @@ input[type=submit]:hover,
   margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 768px) {
-  #evcal_list {
-    max-width: 800px !important;
-  }
-}
 button {
   border-radius: 4px !important;
 }
