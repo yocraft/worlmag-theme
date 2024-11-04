@@ -232,6 +232,7 @@
 .eventon_list_event
   display: flex !important
   flex-direction: column !important
+  gap: 20px
 
 .evcal_eventcard p,
 .wp-block-image figcaption
@@ -314,11 +315,16 @@
   &
     text-align: center !important
 
-#evcal_list .evoet_dayblock
-  width: 100% !important
-  display: flex !important
-  align-items: center
-  margin-bottom: 10px
+#evcal_list
+
+  .evoet_dayblock
+    width: 100% !important
+    display: flex !important
+    align-items: center
+    margin-bottom: 10px
+
+  p.desc_trig_outter
+    border-bottom: 0 !important
 
 .evoet_time_expand
   justify-content: center

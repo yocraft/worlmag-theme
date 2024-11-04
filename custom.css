@@ -247,8 +247,8 @@ input[type=submit]:hover,
   align-items: flex-start !important;
 }
 .evo_events_list_box .evo_eventtop .evcal_list_a .evcal_location {
-  color: white;
-  font-size: 14px;
+  color: white !important;
+  font-size: 14px !important;
 }
 .evo_events_list_box .evo_eventtop .evcal_list_a .evoet_c2 {
   width: auto;
@@ -822,6 +822,7 @@ button {
 .eventon_list_event {
   display: flex !important;
   flex-direction: column !important;
+  gap: 20px;
 }
 
 .evcal_eventcard p,
@@ -921,6 +922,9 @@ button {
   display: flex !important;
   align-items: center;
   margin-bottom: 10px;
+}
+#evcal_list p.desc_trig_outter {
+  border-bottom: 0 !important;
 }
 
 .evoet_time_expand {
