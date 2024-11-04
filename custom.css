@@ -228,6 +228,11 @@ input[type=submit]:hover,
   border-radius: 0;
 }
 
+.evcal_location > em {
+  color: white !important;
+  font-size: 14px !important;
+}
+
 .evo_events_list_box > div {
   border: none !important;
 }
@@ -245,13 +250,6 @@ input[type=submit]:hover,
 .evo_events_list_box .evo_eventtop .evcal_list_a .evcal_desc,
 .evo_events_list_box .evo_eventtop .evcal_list_a .evoet_time_expand {
   align-items: flex-start !important;
-}
-.evo_events_list_box .evo_eventtop .evcal_list_a .evcal_location em {
-  color: white !important;
-  font-size: 14px !important;
-}
-.evo_events_list_box .evo_eventtop .evcal_list_a .evcal_month_line {
-  color: #fff;
 }
 .evo_events_list_box .evo_eventtop .evcal_list_a .evoet_c2 {
   width: auto;
@@ -933,6 +931,10 @@ button {
 }
 #evcal_list p.desc_trig_outter {
   border-bottom: 0 !important;
+}
+#evcal_list .evcal_month_line p {
+  color: #fff !important;
+  margin-bottom: 20px;
 }
 
 .evoet_time_expand {
