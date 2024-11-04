@@ -259,9 +259,12 @@ input[type=submit]:hover,
   margin: 0 !important;
 }
 
-.list_cal {
+.ajde_evcal_calendar {
   max-width: 900px;
   margin: 0 auto;
+}
+.ajde_evcal_calendar .cev #evcal_list {
+  border-radius: 0 !important;
 }
 
 .evcal_cblock .evo_start .year,
