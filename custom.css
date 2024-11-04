@@ -910,11 +910,9 @@ button {
   flex-direction: column;
 }
 
-#evcal_list .evoet_cx,
 #evcal_list .evoet_title {
   width: 100% !important;
 }
-#evcal_list .evoet_cx,
 #evcal_list .evoet_title {
   text-align: center !important;
 }
