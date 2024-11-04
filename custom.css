@@ -234,6 +234,10 @@ input[type=submit]:hover,
 .evo_events_list_box .evo_eventtop .evcal_list_a {
   background-color: #161616 !important;
   flex-direction: row;
+  gap: 20px;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a .evoet_title {
+  font-size: 24px !important;
 }
 .evo_events_list_box .evo_eventtop .evcal_list_a .evo_start {
   flex-direction: column !important;
@@ -241,6 +245,10 @@ input[type=submit]:hover,
 .evo_events_list_box .evo_eventtop .evcal_list_a .evcal_desc,
 .evo_events_list_box .evo_eventtop .evcal_list_a .evoet_time_expand {
   align-items: flex-start !important;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a .evcal_location {
+  color: white;
+  font-size: 14px;
 }
 .evo_events_list_box .evo_eventtop .evcal_list_a .evoet_c2 {
   width: auto;
@@ -908,13 +916,6 @@ button {
 .evcal_list_a {
   display: flex !important;
   flex-direction: column;
-}
-
-#evcal_list .evoet_title {
-  width: 100% !important;
-}
-#evcal_list .evoet_title {
-  text-align: center !important;
 }
 
 #evcal_list .evoet_dayblock {
