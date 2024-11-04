@@ -242,6 +242,9 @@ input[type=submit]:hover,
 .evo_events_list_box .evo_eventtop .evcal_list_a .evoet_time_expand {
   align-items: flex-start !important;
 }
+.evo_events_list_box .evo_eventtop .evcal_list_a .evoet_c2 {
+  width: auto;
+}
 
 .ajde_evcal_calendar.boxy.boxstyle1 .evo_boxtop {
   margin: 0 !important;
@@ -284,9 +287,6 @@ input[type=submit]:hover,
 }
 #home-page #evcal_list .evoet_dayblock {
   width: 300px !important;
-}
-#home-page #evcal_list .evoet_cx {
-  margin-right: 0px !important;
 }
 #home-page #evcal_list .evoet_title {
   font-size: 20px !important;
