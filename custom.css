@@ -260,7 +260,7 @@ input[type=submit]:hover,
 }
 
 .ajde_evcal_calendar {
-  max-width: 900px;
+  max-width: 1092px;
   margin: 0 auto;
 }
 .ajde_evcal_calendar .cev #evcal_list {
@@ -1089,6 +1089,11 @@ button {
   height: 100px !important;
   max-height: 100px !important;
   border-radius: 0 !important;
+}
+@media only screen and (max-width: 768px) {
+  .eventon_events_list .eventon_list_event .evcal_list_a {
+    flex-direction: column;
+  }
 }
 
 .evoet_c3 .evoet_title,

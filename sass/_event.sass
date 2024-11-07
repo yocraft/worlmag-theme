@@ -458,11 +458,16 @@
 
 // .evoet_c1 .ev_ftImg
 //   display: none !important
-.eventon_events_list .eventon_list_event .ev_ftImg
-  width: 100px !important
-  height: 100px !important
-  max-height: 100px !important
-  border-radius: 0 !important
+.eventon_events_list .eventon_list_event
+  .ev_ftImg
+    width: 100px !important
+    height: 100px !important
+    max-height: 100px !important
+    border-radius: 0 !important
+
+  @media only screen and (max-width: 768px)
+    .evcal_list_a
+      flex-direction: column
 
 .evoet_c3 .evoet_title,
 .evcal_time,
