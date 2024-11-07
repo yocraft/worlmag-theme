@@ -1090,11 +1090,6 @@ button {
   max-height: 100px !important;
   border-radius: 0 !important;
 }
-@media only screen and (max-width: 768px) {
-  .eventon_events_list .eventon_list_event .evcal_list_a {
-    flex-direction: column;
-  }
-}
 
 .evoet_c3 .evoet_title,
 .evcal_time,
@@ -1166,6 +1161,9 @@ button {
 @media only screen and (max-width: 768px) {
   .evocard_box {
     margin: 10px 0 !important;
+  }
+  .eventon_events_list .eventon_list_event .evcal_list_a {
+    flex-direction: column;
   }
 }
 .top-full-width-sidebar {
