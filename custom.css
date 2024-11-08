@@ -1180,6 +1180,10 @@ button {
   .evo_events_list_box .evo_eventtop .evcal_list_a .evo_start {
     flex-direction: row !important;
   }
+  .evo_events_list_box .evo_eventtop .evcal_list_a .evcal_desc {
+    align-items: center !important;
+    text-wrap: balance;
+  }
 }
 .top-full-width-sidebar {
   max-width: 100%;
