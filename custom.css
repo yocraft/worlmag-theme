@@ -578,6 +578,10 @@ button {
   background-color: #232323;
 }
 
+.ajde_evcal_calendar.color #evcal_list .eventon_list_event .evoet_cx em {
+  color: #fff !important;
+}
+
 .evo_tz_time {
   text-align: center;
 }
@@ -1085,9 +1089,9 @@ button {
 }
 
 .eventon_events_list .eventon_list_event .ev_ftImg {
-  width: 100px !important;
-  height: 100px !important;
-  max-height: 100px !important;
+  width: 130px !important;
+  height: 130px !important;
+  max-height: 130px !important;
   border-radius: 0 !important;
 }
 
