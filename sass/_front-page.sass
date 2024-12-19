@@ -49,7 +49,15 @@
 
 .cm-single-slide img
   object-fit: cover !important
-  height: 100vh !important
+  height: 60vh !important
+
+  @media (min-width: 768px)
+    height: 100vh !important
+
+.top-full-width-sidebar
+  .bx-viewport
+    @media (max-width: 768px)
+      height: auto !important
 
 .cm-post-categories a
   background-color: $red
@@ -112,3 +120,4 @@
   .cm-post img
     min-height: 395px
     max-height: 395px
+    object-fit: cover

@@ -1253,7 +1253,18 @@ button {
 
 .cm-single-slide img {
   object-fit: cover !important;
-  height: 100vh !important;
+  height: 60vh !important;
+}
+@media (min-width: 768px) {
+  .cm-single-slide img {
+    height: 100vh !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-full-width-sidebar .bx-viewport {
+    height: auto !important;
+  }
 }
 
 .cm-post-categories a {
@@ -1317,6 +1328,7 @@ button {
 .bx-viewport .cm-post img {
   min-height: 395px;
   max-height: 395px;
+  object-fit: cover;
 }
 
 .cm-widget-title {
