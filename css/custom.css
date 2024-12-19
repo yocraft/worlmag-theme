@@ -1203,7 +1203,7 @@ button {
 .top-full-width-sidebar img {
   object-fit: cover;
   object-position: top;
-  height: 100vh;
+  height: 98vh;
 }
 
 @media (min-width: 992px) {
