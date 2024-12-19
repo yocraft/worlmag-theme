@@ -256,10 +256,6 @@ input[type=submit]:hover,
   margin: 0 !important;
 }
 
-.ajde_evcal_calendar {
-  max-width: 1092px;
-  margin: 0 auto;
-}
 .ajde_evcal_calendar .cev #evcal_list {
   border-radius: 0 !important;
 }
@@ -1562,15 +1558,15 @@ button {
 }
 
 .evo_slider_slide_out {
+  width: 100% !important;
   border-radius: 0 !important;
+}
+.evo_slider_slide_out .slide {
+  margin: 0 5px;
 }
 
 .evoslider.ajde_evcal_calendar.ss_imgtop.multiSlider .eventon_list_event.hasbgimg .evo_boxtop {
   flex: 0 0 280px !important;
-}
-
-.evoslider .eventon_events_list {
-  gap: 20px;
 }
 
 .type-videos {
