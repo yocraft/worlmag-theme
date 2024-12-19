@@ -106,7 +106,7 @@
   margin-bottom: 16px;
 }
 .the_champ_social_login_title code {
-  font-family: "Outfit";
+  font-family: 'Outfit';
   font-size: 18px;
   font-weight: 400;
   color: #fff;
@@ -129,7 +129,7 @@
   margin: 0 auto;
 }
 .heateor_ss_sl_optin_container code label {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 14px !important;
   text-wrap: balance;
   color: #fff;
@@ -144,7 +144,7 @@
 
 body .wpuf-message {
   background: #ff0000 !important;
-  font-family: "$primary-font";
+  font-family: '$primary-font';
   text-align: center;
   border: none !important;
   color: #fff !important;
@@ -154,13 +154,18 @@ body .wpuf-message {
   white-space: normal;
 }
 #wpuf-login-form a {
-  font-family: "Inter" !important;
+  font-family: 'Inter' !important;
   font-size: 15px !important;
   text-decoration: underline !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Outfit";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit';
   font-weight: 700 !important;
   text-transform: uppercase !important;
 }
@@ -173,9 +178,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button,
-input[type=button],
-input[type=reset],
-input[type=submit],
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
 .wp-block-button .wp-block-button__link,
 .wp-element-button,
 .cm-button {
@@ -183,9 +188,9 @@ input[type=submit],
   border: none;
 }
 button:hover,
-input[type=button]:hover,
-input[type=reset]:hover,
-input[type=submit]:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover,
 .wp-block-button .wp-block-button__link:hover,
 .wp-element-button:hover,
 .cm-button:hover {
@@ -199,8 +204,16 @@ input[type=submit]:hover,
 .cm-beside-slider-widget .cm-widget-title span,
 .cm-category-slide-prev,
 .cm-category-slide-next,
-.cm-featured-category-slider .cm-slide-content .cm-entry-header-meta .cm-post-categories a,
-.cm-slider-area-rotate .cm-slide-content .cm-entry-header-meta .cm-post-categories a {
+.cm-featured-category-slider
+  .cm-slide-content
+  .cm-entry-header-meta
+  .cm-post-categories
+  a,
+.cm-slider-area-rotate
+  .cm-slide-content
+  .cm-entry-header-meta
+  .cm-post-categories
+  a {
   background-color: #ff0000;
 }
 
@@ -215,13 +228,26 @@ input[type=submit]:hover,
 .ajde_evcal_calendar .eventon_list_event.hasbgimg,
 .ajde_evcal_calendar .boxy.boxstyle1 .evo_boxtop,
 .ajde_evcal_calendar .boxy.boxstyle2 .evo_boxtop,
-.ajde_evcal_calendar .boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig {
+.ajde_evcal_calendar
+  .boxy.boxstyle1
+  #evcal_list
+  .eventon_list_event
+  .desc_trig {
   border-radius: 0 !important;
 }
-.ajde_evcal_calendar .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig {
+.ajde_evcal_calendar
+  .boxy.boxstyle1.tbg1
+  #evcal_list
+  .eventon_list_event
+  .desc_trig {
   background-color: #161616 !important;
 }
-.ajde_evcal_calendar .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig .evcal_desc {
+.ajde_evcal_calendar
+  .boxy.boxstyle1.tbg1
+  #evcal_list
+  .eventon_list_event
+  .desc_trig
+  .evcal_desc {
   margin-bottom: 20px !important;
 }
 .ajde_evcal_calendar .evoShow_more_events {
@@ -479,7 +505,8 @@ button {
   background-color: transparent;
 }
 
-.cm-primary-nav ul li:hover > ul, .cm-primary-nav ul li.focus > ul {
+.cm-primary-nav ul li:hover > ul,
+.cm-primary-nav ul li.focus > ul {
   left: 0;
   background-color: #fff;
 }
@@ -637,7 +664,7 @@ button {
   color: red !important;
   font-size: 24px !important;
   font-weight: 800;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .value {
@@ -697,7 +724,8 @@ button {
   color: #000 !important;
 }
 
-.dark-skin .cm-layout-2 .cm-primary-nav .cm-submenu-toggle svg, .dark-skin .cm-layout-2 .cm-primary-nav .cm-submenu-toggle .cm-icon {
+.dark-skin .cm-layout-2 .cm-primary-nav .cm-submenu-toggle svg,
+.dark-skin .cm-layout-2 .cm-primary-nav .cm-submenu-toggle .cm-icon {
   fill: red !important;
 }
 
@@ -773,8 +801,8 @@ button {
   text-transform: uppercase;
 }
 
-#evcal_list .evorow.getdirections .evoInput[type=text],
-.evo_pop_body .evorow.getdirections .evoInput[type=text] {
+#evcal_list .evorow.getdirections .evoInput[type='text'],
+.evo_pop_body .evorow.getdirections .evoInput[type='text'] {
   padding: 8px;
 }
 
@@ -958,7 +986,8 @@ button {
   color: #000 !important;
 }
 
-.evcal_evdata_cell .evotx_image, .evcal_evdata_cell .evo_h3 {
+.evcal_evdata_cell .evotx_image,
+.evcal_evdata_cell .evo_h3 {
   display: none;
 }
 
@@ -978,7 +1007,10 @@ button {
   height: 600px !important;
 }
 
-.eventon_single_event.immersive .eventon_list_event .evoet_time_expand em.evcal_time {
+.eventon_single_event.immersive
+  .eventon_list_event
+  .evoet_time_expand
+  em.evcal_time {
   background: none;
 }
 
@@ -1032,7 +1064,7 @@ button {
   color: red !important;
   font-size: 22px !important;
   font-weight: 800;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -1055,7 +1087,7 @@ button {
   padding: 20px;
   gap: 20px;
 }
-#evcal_list .evorow.getdirections .evoInput[type=text] {
+#evcal_list .evorow.getdirections .evoInput[type='text'] {
   background: #333;
 }
 #evcal_list .evorow.getdirections .evo_get_direction_content button {
@@ -1126,7 +1158,10 @@ button {
   border-radius: 0 !important;
 }
 
-.ajde_evcal_calendar.boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig {
+.ajde_evcal_calendar.boxy.boxstyle1.tbg1
+  #evcal_list
+  .eventon_list_event
+  .desc_trig {
   background-color: #161616 !important;
 }
 
@@ -1203,15 +1238,7 @@ button {
   max-width: 100%;
   margin-top: -20px;
 }
-.top-full-width-sidebar .cm-slider {
-  height: 600px;
-}
-.top-full-width-sidebar .cm-slider .bx-viewport {
-  height: 600px !important;
-}
-.top-full-width-sidebar .cm-slider .bx-viewport .cm-single-slide {
-  height: 600px;
-}
+
 @media (max-width: 1088px) {
   .top-full-width-sidebar .cm-slider .bx-viewport img {
     object-fit: cover;
@@ -1316,14 +1343,18 @@ button {
 }
 
 @media (min-width: 48em) {
-  #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-entry-title {
+  #colormag_featured_posts_slider_widget-9
+    .cm-featured-category-slider
+    .cm-entry-title {
     width: 65%;
     font-size: 5.4rem;
     text-transform: uppercase;
     text-wrap: balance;
     margin-bottom: 40px;
   }
-  #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-slide-content {
+  #colormag_featured_posts_slider_widget-9
+    .cm-featured-category-slider
+    .cm-slide-content {
     padding: 24px 24px 68px;
   }
 }
@@ -1342,7 +1373,7 @@ button {
   color: #fff;
 }
 .quiz_section label {
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 
 .qmn_pagination {
@@ -1368,7 +1399,7 @@ button {
   padding: 16px 10px 16px !important;
 }
 .ts_poll_section header span {
-  font-family: "Inter" !important;
+  font-family: 'Inter' !important;
   font-size: 20px !important;
   font-weight: bold !important;
   margin-bottom: 0 !important;
@@ -1385,7 +1416,7 @@ button {
 }
 
 .ts_poll_answer_label {
-  font-family: "Inter" !important;
+  font-family: 'Inter' !important;
   font-size: 18px !important;
   padding-left: 20px !important;
 }
@@ -1396,7 +1427,7 @@ button {
 }
 .ts_poll_footer_main #ts_poll_result_button_499928 button span {
   font-weight: 600 !important;
-  font-family: "inter" !important;
+  font-family: 'inter' !important;
   line-height: 22px !important;
 }
 
@@ -1409,7 +1440,7 @@ button {
 }
 .mlw_qmn_message_before p {
   font-size: 20px;
-  font-family: "Outfit";
+  font-family: 'Outfit';
   text-transform: uppercase;
 }
 
@@ -1533,40 +1564,71 @@ button {
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event {
   background-color: #161616 !important;
 }
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_cblock {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_cblock {
   align-items: center;
 }
 
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_list_a {
   background-color: #161616 !important;
 }
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evoet_c2 {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_list_a
+  .evoet_c2 {
   width: 100%;
 }
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evoet_title {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_list_a
+  .evoet_title {
   font-size: 24px !important;
 }
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_time {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_list_a
+  .evcal_time {
   font-size: 14px !important;
   flex-wrap: wrap;
   flex-direction: column;
   display: none !important;
 }
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_location {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_list_a
+  .evcal_location {
   font-size: 14px !important;
   color: #fff;
 }
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_oganizer {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_list_a
+  .evcal_oganizer {
   flex-direction: column;
   display: none !important;
 }
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evo_mytime {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_list_a
+  .evo_mytime {
   display: none !important;
 }
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evo_mytime em {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_list_a
+  .evo_mytime
+  em {
   color: #fff !important;
 }
-.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evo_mytime em i {
+.evosliderbox.ajde_evcal_calendar.multiSlider
+  .hasbgimg.eventon_list_event
+  .evcal_list_a
+  .evo_mytime
+  em
+  i {
   opacity: 0.7;
 }
 
@@ -1574,7 +1636,9 @@ button {
   border-radius: 0 !important;
 }
 
-.evoslider.ajde_evcal_calendar.ss_imgtop.multiSlider .eventon_list_event.hasbgimg .evo_boxtop {
+.evoslider.ajde_evcal_calendar.ss_imgtop.multiSlider
+  .eventon_list_event.hasbgimg
+  .evo_boxtop {
   flex: 0 0 280px !important;
 }
 
