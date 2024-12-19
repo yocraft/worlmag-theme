@@ -3533,6 +3533,8 @@ i.fa-arrow-down {
 .cm-slider-area-rotate img {
   width: 100%;
   margin-bottom: 0;
+  object-fit: cover;
+  height: 100vh;
 }
 
 .cm-featured-category-slider .cm-below-entry-meta,
