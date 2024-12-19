@@ -1,0 +1,1582 @@
+.woocommerce-MyAccount-navigation,
+.woocommerce-MyAccount-content {
+  background-color: #161616 !important;
+  border-radius: 0px;
+  overflow: hidden;
+  border: 1px solid #2b2b2e !important;
+  padding: 20px;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+  color: #fff !important;
+  border-bottom: 1px solid #2b2b2e !important;
+}
+.woocommerce-MyAccount-navigation ul li a:hover {
+  color: #fff !important;
+  background-color: #ff0000 !important;
+}
+.woocommerce-MyAccount-navigation ul .is-active a {
+  background: none;
+  color: #ff0000;
+}
+
+.woocommerce-MyAccount-content table th,
+.woocommerce-MyAccount-content table td {
+  border: none;
+  color: #fff;
+}
+.woocommerce-MyAccount-content table th a,
+.woocommerce-MyAccount-content table td a {
+  text-decoration: underline;
+}
+.woocommerce-MyAccount-content table thead {
+  background: none;
+  color: #fff;
+}
+
+.woocommerce-pagination a {
+  text-decoration: underline;
+}
+.woocommerce-pagination a:hover {
+  background-color: transparent !important;
+}
+
+.evotx_event {
+  background-color: #161616;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 0px !important;
+  border: 1px dotted #606062;
+}
+.evotx_event.past {
+  background-color: #161616 !important;
+}
+.evotx_event .evotx_event_tickets .evotx_tb span .evotx_view_ticket {
+  margin-bottom: 20px;
+}
+
+.evotx_view_ticket .fa-eye {
+  display: none !important;
+}
+
+.evotx_tb span {
+  padding-bottom: 10px;
+}
+
+.col2-set {
+  background-color: transparent !important;
+}
+
+.woocommerce-form-register button .woocommerce-Button {
+  color: #fff !important;
+  background-color: #ff0000;
+  margin-bottom: 32px;
+  padding: 8px 54px;
+}
+.woocommerce-form-register:hover {
+  background-color: transparent;
+  color: #ff0000 !important;
+}
+
+.woocommerce-form-login,
+.woocommerce-form-register {
+  background-color: #161616 !important;
+  border-radius: 0px;
+  overflow: hidden;
+  border: 1px solid #2b2b2e !important;
+}
+
+.woocommerce-form-register button.woocommerce-Button {
+  color: #fff !important;
+  background-color: #ff0000 !important;
+  padding: 8px 54px;
+}
+.woocommerce-form-register button.woocommerce-Button:hover {
+  background-color: #a21714 !important;
+}
+
+.woocommerce-account h2 {
+  font-size: 20px;
+}
+
+.the_champ_social_login_title {
+  margin-bottom: 16px;
+}
+.the_champ_social_login_title code {
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.woocommerce-form-login .woocommerce-LostPassword a {
+  text-decoration: underline;
+}
+.woocommerce-form-login .woocommerce-LostPassword a:hover {
+  background-color: transparent;
+}
+
+.the_champ_login_container {
+  margin-bottom: 40px;
+}
+
+.heateor_ss_sl_optin_container {
+  width: 500px;
+  margin: 0 auto;
+}
+.heateor_ss_sl_optin_container code label {
+  font-family: "Inter";
+  font-size: 14px !important;
+  text-wrap: balance;
+  color: #fff;
+}
+.heateor_ss_sl_optin_container a {
+  color: #ff0000 !important;
+}
+
+.heateor_ss_social_login_optin {
+  margin-right: 10px;
+}
+
+body .wpuf-message {
+  background: #ff0000 !important;
+  font-family: "$primary-font";
+  text-align: center;
+  border: none !important;
+  color: #fff !important;
+}
+
+#wpuf-login-form code {
+  white-space: normal;
+}
+#wpuf-login-form a {
+  font-family: "Inter" !important;
+  font-size: 15px !important;
+  text-decoration: underline !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Outfit";
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+
+.dark-skin a {
+  color: #fff;
+}
+.dark-skin .cm-post-content p {
+  color: #fff;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+.wp-block-button .wp-block-button__link,
+.wp-element-button,
+.cm-button {
+  background-color: #ff0000;
+  border: none;
+}
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+.wp-block-button .wp-block-button__link:hover,
+.wp-element-button:hover,
+.cm-button:hover {
+  background-color: #a21714;
+  color: #fff;
+}
+
+.cm-secondary .cm-widget-title span,
+#cm-tertiary .cm-widget-title span,
+.cm-slider-area .cm-widget-title span,
+.cm-beside-slider-widget .cm-widget-title span,
+.cm-category-slide-prev,
+.cm-category-slide-next,
+.cm-featured-category-slider .cm-slide-content .cm-entry-header-meta .cm-post-categories a,
+.cm-slider-area-rotate .cm-slide-content .cm-entry-header-meta .cm-post-categories a {
+  background-color: #ff0000;
+}
+
+.cm-page-header .cm-page-title {
+  border-bottom: 1px solid #2b2b2e;
+}
+
+.cm-container {
+  max-width: 1440px;
+}
+
+.ajde_evcal_calendar .eventon_list_event.hasbgimg,
+.ajde_evcal_calendar .boxy.boxstyle1 .evo_boxtop,
+.ajde_evcal_calendar .boxy.boxstyle2 .evo_boxtop,
+.ajde_evcal_calendar .boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig {
+  border-radius: 0 !important;
+}
+.ajde_evcal_calendar .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig {
+  background-color: #161616 !important;
+}
+.ajde_evcal_calendar .boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig .evcal_desc {
+  margin-bottom: 20px !important;
+}
+.ajde_evcal_calendar .evoShow_more_events {
+  border-radius: 0;
+}
+
+.evcal_location > em {
+  color: white !important;
+  font-size: 14px !important;
+}
+
+.evo_events_list_box > div {
+  border: none !important;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a {
+  background-color: #161616 !important;
+  flex-direction: row;
+  gap: 20px;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a .evoet_title {
+  font-size: 24px !important;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a .evo_start {
+  flex-direction: column !important;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a .evcal_desc,
+.evo_events_list_box .evo_eventtop .evcal_list_a .evoet_time_expand {
+  align-items: flex-start !important;
+}
+.evo_events_list_box .evo_eventtop .evcal_list_a .evoet_c2 {
+  width: auto;
+}
+
+.ajde_evcal_calendar.boxy.boxstyle1 .evo_boxtop {
+  margin: 0 !important;
+}
+
+.ajde_evcal_calendar {
+  max-width: 1092px;
+  margin: 0 auto;
+}
+.ajde_evcal_calendar .cev #evcal_list {
+  border-radius: 0 !important;
+}
+
+.evcal_cblock .evo_start .year,
+.evcal_cblock .evo_start .date,
+.evcal_cblock .evo_start .month,
+.evcal_cblock .evo_start .day {
+  color: red !important;
+  font-size: 18px !important;
+  opacity: 1 !important;
+}
+
+#home-page #evcal_list {
+  border: none !important;
+}
+#home-page #evcal_list .evcal_location,
+#home-page #evcal_list .evcal_location em {
+  color: #fff !important;
+  font-size: 14px !important;
+  margin-top: 14px;
+  text-wrap: balance;
+}
+#home-page #evcal_list .evcal_oganizer {
+  justify-content: center;
+}
+#home-page #evcal_list .evcal_oganizer em i {
+  color: #fff !important;
+}
+#home-page #evcal_list .evcal_time {
+  font-size: 14px !important;
+  flex-direction: column;
+}
+#home-page #evcal_list .evo_start {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 5px;
+  align-items: center;
+}
+#home-page #evcal_list .evoet_dayblock {
+  width: 300px !important;
+}
+#home-page #evcal_list .evoet_title {
+  font-size: 20px !important;
+  line-height: 28px !important;
+  text-wrap: balance !important;
+  text-align: left;
+  width: 320px;
+  padding-bottom: 16px !important;
+}
+#home-page #evcal_list .evoet_title .evo_endday {
+  display: none;
+}
+#home-page #evcal_list .eventon_list_event .evoet_cx em,
+#home-page #evcal_list .evo_lightboxes .evoet_cx em {
+  color: #fff;
+}
+#home-page #evcal_list .evcal_oganizer {
+  margin-top: 10px;
+}
+#home-page #evcal_list .evcal_oganizer .evoet_dataval {
+  color: #fff !important;
+}
+#home-page #evcal_list .eventon_list_event a:hover {
+  border: 0 !important;
+}
+
+.evoet_cx .evoet_time_expand .evcal_time i.fa,
+.evoet_cx .evoet_location .evcal_location i.fa {
+  color: #ff0000 !important;
+  display: none;
+}
+
+.evcal_cblock .year {
+  opacity: 1 !important;
+}
+
+.evoet_dayblock .evo_start .year,
+.evoet_dayblock .evo_start .day,
+.evoet_dayblock .evo_start .date,
+.evoet_dayblock .evo_start .month {
+  color: burlywood !important;
+}
+
+.eventon_events_list .eventon_list_event .evoet_cx .level_3.evoet_time_expand {
+  flex-direction: column;
+}
+
+.boxy .evoet_cx .evo_epbar_o {
+  background-color: #282828 !important;
+  border-radius: 5px !important;
+}
+
+#evcal_widget #evcal_list .eventon_list_event .evcal_list_a {
+  border: 1px solid #2b2b2e !important;
+  padding-top: 220px !important;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
+
+.eventon_events_list .evoShow_more_events {
+  border-radius: 0 !important;
+}
+.eventon_events_list .evoShow_more_events span {
+  background-color: #161616 !important;
+  border: 10px solid transparent;
+}
+
+.ajde_evcal_calendar.boxy .eventon_list_event .evcal_list_a {
+  gap: 0 !important;
+}
+
+.widget .eventon_events_list .eventon_list_event .evoet_cx {
+  margin-bottom: 40px;
+}
+
+button {
+  border-radius: 4px !important;
+}
+
+.evcal_btn {
+  border-radius: 4px !important;
+  line-height: 16px !important;
+}
+
+#cm-masthead #cm-header-2 .cm-container {
+  max-width: 100%;
+}
+
+#menu-primary-menu {
+  justify-content: flex-end;
+}
+
+.cm-primary-nav ul > li:hover > a,
+.cm-primary-nav ul ul.sub-menu,
+.cm-layout-2 .cm-primary-nav ul > li > a {
+  border: none !important;
+}
+.cm-primary-nav ul > li:hover > a li,
+.cm-primary-nav ul ul.sub-menu li,
+.cm-layout-2 .cm-primary-nav ul > li > a li {
+  border-bottom: none !important;
+}
+
+.current-menu-parent {
+  background: none !important;
+}
+
+.cm-primary-nav ul li .current_page_item,
+.cm-primary-nav ul li .current-menu-item {
+  background-color: transparent !important;
+}
+
+.cm-primary-nav ul li.current_page_item {
+  background-color: transparent !important;
+}
+
+.cm-header-1 .cm-row {
+  display: none;
+}
+
+.dark-skin .cm-primary-nav ul > li > a,
+.dark-skin .cm-primary-nav ul ul.sub-menu li a {
+  color: #000 !important;
+}
+
+@media (min-width: 992px) {
+  .dark-skin .cm-primary-nav .current-menu-item a {
+    color: red !important;
+  }
+}
+
+#cm-primary-nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #fff !important;
+  border-bottom: none !important;
+}
+#cm-primary-nav li {
+  padding: 6px 16px;
+}
+#cm-primary-nav li a {
+  text-transform: uppercase !important;
+}
+
+.cm-primary-nav .cm-container {
+  width: 100%;
+}
+
+.menu-logo img {
+  height: 56px !important;
+  min-width: 100px;
+}
+
+.cm-menu-toggle {
+  position: absolute;
+  right: 60px;
+}
+.cm-menu-toggle svg {
+  fill: #000 !important;
+}
+
+#cm-primary-nav {
+  border-top: none;
+}
+
+.cm-primary-nav .cm-submenu-toggle .cm-icon {
+  fill: #ff0000;
+}
+
+.cm-primary-nav ul li:hover,
+.cm-primary-nav ul li.focus > a {
+  background-color: transparent;
+}
+
+.cm-primary-nav ul li:hover > ul, .cm-primary-nav ul li.focus > ul {
+  left: 0;
+  background-color: #fff;
+}
+
+.search-wrap button {
+  background-color: #ff0000;
+}
+
+.fa.search-top:hover {
+  background-color: transparent;
+}
+
+.cm-entry-button {
+  background-color: #ff0000;
+}
+
+.evo_btn_arr {
+  border-radius: 0;
+  background-color: burlywood !important;
+}
+
+.cm-footer-bar__2 p {
+  padding-top: 46px;
+}
+
+#menu-footer-tertiary a {
+  text-transform: uppercase;
+}
+
+.cm-mobile-nav li {
+  background-color: #232323 !important;
+}
+.cm-mobile-nav li:hover {
+  background-color: #232323 !important;
+}
+.cm-mobile-nav .menu-item .sub-menu li {
+  background-color: #232323 !important;
+}
+.cm-mobile-nav .menu-item .current-menu-item,
+.cm-mobile-nav .menu-item .current_page_item > a {
+  background-color: #232323;
+}
+.cm-mobile-nav .cm-submenu-toggle .cm-icon {
+  fill: #fff !important;
+}
+
+.dark-skin .sub-menu li:hover {
+  background-color: burlywood !important;
+}
+.dark-skin .sub-menu li a:hover {
+  border-bottom: none !important;
+}
+.dark-skin .fa.search-top {
+  color: black;
+}
+
+@media only screen and (min-width: 767px) {
+  .cm-footer-bar__2 p {
+    padding-top: 46px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #cm-primary-nav .cm-container {
+    width: 100%;
+  }
+}
+.evcal_cblock .evo_start {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 5px;
+  align-items: center;
+}
+
+.cm-content {
+  padding-top: 20px;
+}
+
+.cm-entry-summary a:hover {
+  background-color: #af0000;
+}
+
+.cm-front-page-top-section {
+  margin-bottom: 90px;
+}
+
+.dark-skin .cm-layout-2 .cm-primary-nav .cm-menu-toggle svg,
+.dark-skin .cm-layout-2 .cm-primary-nav .cm-menu-toggle .cm-icon {
+  fill: #000;
+}
+
+.dark-skin .cm-layout-2 .cm-primary-nav ul > li > a {
+  font-size: 16px !important;
+}
+
+.ajde_evcal_calendar.boxy .eventon_list_event p.no_events {
+  background-color: #232323;
+}
+
+.ajde_evcal_calendar.color .evoet_cx em i,
+.eventon_events_list .eventon_list_event .evoet_cx .level_4 em {
+  color: #fff !important;
+}
+
+.evo_tz_time {
+  text-align: center;
+}
+
+.evo_tz {
+  font-size: 16px;
+}
+
+.evotx_image {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eventon_events_list .eventon_list_event .evoet_c3 {
+  flex: auto;
+}
+
+.evcal_evdata_cell p {
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.sd-title {
+  display: none !important;
+}
+
+.cm-footer .cm-upper-footer-cols .widget {
+  background: none;
+}
+
+.cm-lower-footer-cols .cm-lower-footer-col--1 {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.wp-block-buttons > .wp-block-button {
+  margin-bottom: 16px;
+}
+
+#respond.comment-respond form#commentform #comment-form__verbum {
+  background-color: #161616 !important;
+}
+
+.price .evo_label {
+  color: red !important;
+  font-size: 24px !important;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.value {
+  font-size: 20px;
+}
+
+.evotx_quantity .qty {
+  width: auto;
+}
+
+.evotx_quantity,
+.tx_price_line {
+  border: none !important;
+}
+
+.evoTX_wc_section .evotx_quantity .qty b.plu,
+.evotx_qty_adjuster b.plu {
+  top: 0;
+  background-color: #ff0000;
+}
+
+.evotx_addtocart_total {
+  width: 220px !important;
+  margin: 0 auto !important;
+  margin-bottom: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  color: #fff !important;
+  gap: 20px !important;
+}
+
+.evotx_addtocart {
+  height: 40px !important;
+  width: 165px !important;
+  border-radius: 4px !important;
+}
+
+.evotx_cart_actions .evcal_btn {
+  line-height: 16px !important;
+  margin: 0 10px;
+  height: 40px !important;
+  width: 165px !important;
+  border-radius: 4px !important;
+}
+
+@media (max-width: 568px) {
+  .evcal_eventcard .evcal_evdata_row .evcal_evdata_cell {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .dark-skin .cm-layout-2 .cm-primary-nav ul > li > a {
+    font-size: 14px !important;
+  }
+}
+.dark-skin .cm-layout-2 #cm-primary-nav .fa {
+  color: #000 !important;
+}
+
+.dark-skin .cm-layout-2 .cm-primary-nav .cm-submenu-toggle svg, .dark-skin .cm-layout-2 .cm-primary-nav .cm-submenu-toggle .cm-icon {
+  fill: red !important;
+}
+
+.cm-primary-nav .cm-submenu-toggle .cm-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.cm-widget-title {
+  border-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .cm-widget-title {
+    border-bottom: 1px solid #ff0000 !important;
+  }
+}
+.eventon_main_section {
+  padding: 0;
+}
+
+.evcal_list_a {
+  background-color: #333;
+}
+
+.eventon_sorting_section {
+  background-color: transparent !important;
+}
+
+#evcal_head.calendar_header #evcal_cur {
+  color: #fff !important;
+}
+
+#cm-primary-nav {
+  background-color: red;
+}
+
+.evo_metarow_organizer .evo_evdata_cell_content .evo_card_organizer {
+  padding: 0 !important;
+}
+
+.evcal_evdata_img {
+  height: 800px !important;
+}
+
+#evcal_list p.desc_trig_outter,
+.evocard_box,
+.evcal_evdata_row {
+  border-radius: 0 !important;
+}
+
+.event_description {
+  padding-top: 16px !important;
+}
+
+.evoet_title {
+  font-size: 30px !important;
+}
+
+.evcal_evdata_icons {
+  display: none !important;
+}
+
+.evcal_time,
+.evcal_location,
+.evcal_time i.fa,
+.evoet_location .evcal_location i.fa {
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+.evo_h3 {
+  text-transform: uppercase;
+}
+
+#evcal_list .evorow.getdirections .evoInput[type=text],
+.evo_pop_body .evorow.getdirections .evoInput[type=text] {
+  padding: 8px;
+}
+
+#evcal_list .evorow.getdirections .evoInput:focus,
+.evo_pop_body .evorow.getdirections .evoInput:focus {
+  border: 1px solid #fff;
+}
+
+#evcal_list .eventon_list_event .evoInput,
+.evo_pop_body .evoInput {
+  font-style: normal;
+}
+
+.evo_btn_arr_circ {
+  height: 30px;
+}
+.evo_btn_arr_circ .fa {
+  color: #000;
+}
+
+.evcal_event_subtitle {
+  display: none !important;
+}
+
+.list_cal #evcal_list > div {
+  border: none !important;
+}
+
+.evoet_c2 {
+  width: 80px;
+  margin-right: 0 !important;
+}
+
+.year {
+  font-size: 20px !important;
+  order: 2;
+}
+
+.day,
+.month {
+  font-size: 24px !important;
+}
+
+.evo_end .date {
+  font-size: 30px !important;
+}
+
+.evo_start,
+.evoet_dayblock {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.eventon_list_event .evo_metarow_details .eventon_full_description p,
+.eventon_list_event .event_description p {
+  font-size: 16px !important;
+}
+
+.eventon_list_event {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px;
+}
+
+.evcal_eventcard p,
+.wp-block-image figcaption {
+  color: #fff !important;
+}
+.evcal_eventcard p,
+.wp-block-image figcaption {
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+}
+
+.evcal_evdata_img {
+  max-height: 730px !important;
+  background-size: contain !important;
+  background-color: #161616;
+}
+
+.evcal_event_details,
+.evorow.getdirections,
+.advertisement_above_footer {
+  background-color: #161616 !important;
+}
+
+.evorow.getdirections {
+  border: none !important;
+}
+
+.evosin_event_title,
+.evo_end {
+  display: none;
+}
+
+#event_time,
+#event_location,
+#event_getdirection,
+#event_addtocal,
+.evocard_box {
+  background-color: #161616 !important;
+}
+
+#event_evosocial {
+  background-color: red !important;
+  background-image: linear-gradient(99deg, #c90404 0%, #ff0000 100%) !important;
+}
+
+.color.evo_sin_page #evcal_list .eventon_list_event .evcal_list_a {
+  background-color: #161616 !important;
+}
+
+.evcal_evdata_cell {
+  text-align: center !important;
+}
+
+.evo_mytime,
+.evo_get_direction_button,
+.evcal_btn {
+  background-color: burlywood !important;
+}
+
+.evcal_desc {
+  display: flex;
+  align-items: center;
+}
+
+.evoet_title {
+  text-align: center;
+}
+
+.fa-road {
+  display: none !important;
+}
+
+.evo_metarow_socialmedia a.evo_ss i,
+.evoInput,
+.evo_ics_nCal,
+.evo_ics_gCal,
+.evo_card_organizer_name_t a {
+  color: #fff !important;
+}
+
+.evcal_event_details .evcal_evdata_cell.shorter_desc .eventon_desc_in:after {
+  display: none;
+}
+
+.wpl-likebox {
+  display: none;
+}
+
+.evcal_list_a {
+  display: flex !important;
+  flex-direction: column;
+}
+
+#evcal_list .evoet_dayblock {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#evcal_list p.desc_trig_outter {
+  border-bottom: 0 !important;
+}
+#evcal_list .evcal_month_line p {
+  color: #fff !important;
+  margin-bottom: 20px;
+}
+
+.evoet_time_expand {
+  justify-content: center;
+  gap: 10px;
+}
+
+.evo_start .year,
+.evo_start .date,
+.evo_start .month,
+.evo_start .day {
+  font-size: 30px !important;
+  color: #000 !important;
+}
+
+.evcal_evdata_cell .evotx_image, .evcal_evdata_cell .evo_h3 {
+  display: none;
+}
+
+.evo_tz {
+  font-size: 14px;
+}
+
+.evocard_row {
+  padding-bottom: 0;
+}
+
+#event_ftimage {
+  padding: 20px 20px 40px;
+}
+
+.evcal_evdata_img {
+  height: 600px !important;
+}
+
+.eventon_single_event.immersive .eventon_list_event .evoet_time_expand em.evcal_time {
+  background: none;
+}
+
+.eventon_single_event #evcal_list .evoet_title {
+  font-size: 30px !important;
+}
+
+.eventon_single_event #evcal_list .evcal_time {
+  font-size: 18px !important;
+}
+
+.eventon_single_event #evcal_list .evcal_location,
+.eventon_single_event #evcal_list .evoet_time_expand,
+.eventon_single_event #evcal_list .evcal_oganizer {
+  display: none !important;
+}
+
+.eventon_single_event #evcal_list .evoet_time_expand {
+  flex-direction: column;
+}
+
+.evoet_location {
+  text-align: center;
+}
+
+.refund_policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.refund_policy p {
+  display: block !important;
+  font-size: 14px !important;
+  text-align: center;
+  color: #888888 !important;
+  width: 75%;
+  margin-bottom: 10px !important;
+  text-wrap: balance !important;
+}
+.refund_policy a {
+  color: #ff0000 !important;
+}
+
+#event_eventdetails .evo_label,
+#event_time .evo_label,
+.price .evo_label,
+#event_customfield1 .evo_label,
+#event_customfield2 .evo_label,
+#event_customfield3 .evo_label,
+#event_organizer .evo_label {
+  color: red !important;
+  font-size: 22px !important;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#event_customfield1 .evorow,
+#event_customfield2 .evorow,
+#event_customfield3 .evorow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eventdetails .evorow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#evcal_list .evorow.getdirections .evo_get_direction_content {
+  padding: 20px;
+  gap: 20px;
+}
+#evcal_list .evorow.getdirections .evoInput[type=text] {
+  background: #333;
+}
+#evcal_list .evorow.getdirections .evo_get_direction_content button {
+  width: 150px;
+  justify-content: center;
+}
+
+#evcal_list .eventon_list_event .evcal_eventcard p {
+  display: flex !important;
+  flex-direction: column !important;
+}
+#evcal_list .eventon_list_event .evcal_eventcard p a {
+  padding: 0;
+}
+
+.time .evo_metarow_time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evocard_main_image span {
+  max-height: 640px !important;
+  max-width: 500px !important;
+}
+
+.evocard_row .evocard_main_image_hold {
+  margin: 0 auto;
+  background-color: #161616;
+  max-height: 640px !important;
+  max-width: 500px !important;
+}
+
+.eventon_events_list .eventon_list_event .ev_ftImg {
+  width: 130px !important;
+  height: 130px !important;
+  max-height: 130px !important;
+  border-radius: 0 !important;
+}
+
+.evoet_c3 .evoet_title,
+.evcal_time,
+.evo_tz,
+.evo_endday {
+  color: #fff !important;
+}
+
+.wc-proceed-to-checkout {
+  align-items: flex-start;
+}
+
+.gpay-card-info-container {
+  min-width: 160px;
+  max-width: 200px;
+}
+
+.evose_repeat_header {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.ajde_evcal_calendar.boxy.boxstyle1 .evo_boxtop {
+  border-radius: 0px !important;
+}
+
+.ajde_evcal_calendar.boxy.boxstyle1 #evcal_list .eventon_list_event .desc_trig {
+  border-radius: 0 !important;
+}
+
+.ajde_evcal_calendar.boxy.boxstyle1.tbg1 #evcal_list .eventon_list_event .desc_trig {
+  background-color: #161616 !important;
+}
+
+.evoet_progress_bar {
+  display: flex !important;
+  justify-content: center;
+}
+
+.evo_epbar_o {
+  margin-top: 10px;
+  margin-right: 0 !important;
+}
+
+.evo_countdowner {
+  color: #fff !important;
+  margin-top: 5px;
+}
+
+.evo_events_list_box .evo_eventtop .evcal_list_a .evcal_time {
+  font-size: 14px !important;
+}
+
+.eventon_events_list .eventon_list_event .evoet_cx .evcal_location {
+  font-size: 14px !important;
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 480px) {
+  #evcal_list {
+    max-width: 398px !important;
+  }
+  .evorow.getdirections .evo_get_direction_content {
+    flex-direction: column !important;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .wc-proceed-to-checkout {
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .checkout-button {
+    min-width: 160px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .evocard_box {
+    margin: 10px 0 !important;
+  }
+  .eventon_events_list .eventon_list_event .evcal_list_a {
+    flex-direction: column;
+    align-items: center;
+  }
+  .eventon_events_list .eventon_list_event .evcal_cblock em {
+    font-size: 22px !important;
+  }
+  .eventon_events_list .eventon_list_event .ev_ftImg {
+    width: 300px !important;
+    height: 300px !important;
+    max-height: 300px !important;
+  }
+  .evo_events_list_box .evo_eventtop .evcal_list_a .evoet_time_expand {
+    align-items: center !important;
+  }
+  .evo_events_list_box .evo_eventtop .evcal_list_a .evo_start {
+    flex-direction: row !important;
+  }
+  .evo_events_list_box .evo_eventtop .evcal_list_a .evcal_desc {
+    align-items: center !important;
+    text-wrap: balance;
+  }
+}
+.top-full-width-sidebar {
+  max-width: 100%;
+  margin-top: -20px;
+}
+.top-full-width-sidebar img {
+  object-fit: cover;
+  object-position: top;
+  height: 100vh;
+}
+
+@media (min-width: 992px) {
+  .cm-front-page-top-section {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cm-slider-area {
+    width: 65%;
+  }
+}
+@media (min-width: 1168px) {
+  .cm-slider-area {
+    width: 100%;
+  }
+}
+
+.widget_block .wp-block-separator {
+  width: 100% !important;
+  margin: 40px 0 !important;
+  background-color: #2b2b2e !important;
+}
+
+.cm-advertisement-content img {
+  width: 100%;
+}
+
+.cm-widget-title span {
+  padding: 6px 12px;
+  font-size: 18px;
+}
+
+.header-image {
+  border-bottom: none !important;
+}
+
+.cm-beside-slider-widget {
+  padding-left: 0 !important;
+}
+
+.cm-featured-category-slider .cm-below-entry-meta {
+  display: none;
+}
+
+.cm-featured-category-slider .cm-slide-content,
+.cm-slider-area-rotate .cm-slide-content {
+  background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, #121111 100%);
+}
+
+.cm-post-categories a {
+  background-color: #ff0000;
+}
+
+.bx-controls {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .cm-beside-slider-widget,
+  .cm-secondary {
+    margin-left: 20px;
+  }
+}
+
+.home-ad-block {
+  background-color: #fff;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.home-ad-block h4 {
+  text-transform: uppercase;
+  text-wrap: balance;
+  color: #ff0000;
+  font-size: 24px;
+}
+.home-ad-block p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.home-ad-block p span {
+  color: #ff0000;
+}
+
+.wp-block-columns {
+  align-items: flex-start;
+}
+.wp-block-columns .cm-post img {
+  max-height: 350px;
+}
+
+@media (min-width: 48em) {
+  #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-entry-title {
+    width: 65%;
+    font-size: 5.4rem;
+    text-transform: uppercase;
+    text-wrap: balance;
+    margin-bottom: 40px;
+  }
+  #colormag_featured_posts_slider_widget-9 .cm-featured-category-slider .cm-slide-content {
+    padding: 24px 24px 68px;
+  }
+}
+.cm-widget-title {
+  text-transform: uppercase;
+}
+
+#quizForm1 {
+  border: 1px solid #2b2b2e;
+  background: #161616;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.quiz_section {
+  color: #fff;
+}
+.quiz_section label {
+  font-family: "Inter";
+}
+
+.qmn_pagination {
+  justify-content: flex-start !important;
+}
+
+.qmn_quiz_container .qmn_btn {
+  background: #ff0000 !important;
+  border: none !important;
+  width: 200px;
+}
+
+.qsm-quiz-container {
+  display: flex;
+  flex-direction: column;
+}
+.qsm-quiz-container img {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.ts_poll_section header {
+  padding: 16px 10px 16px !important;
+}
+.ts_poll_section header span {
+  font-family: "Inter" !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin-bottom: 0 !important;
+}
+.ts_poll_section main {
+  border: 1px solid #2b2b2e;
+  background: #161616;
+  padding: 20px !important;
+}
+.ts_poll_section footer {
+  border: 1px solid #333;
+  background-color: #161616 !important;
+  border-top: 0;
+}
+
+.ts_poll_answer_label {
+  font-family: "Inter" !important;
+  font-size: 18px !important;
+  padding-left: 20px !important;
+}
+
+.ts_poll_footer_main button {
+  padding: 10px 20px !important;
+  border-radius: 3px !important;
+}
+.ts_poll_footer_main #ts_poll_result_button_499928 button span {
+  font-weight: 600 !important;
+  font-family: "inter" !important;
+  line-height: 22px !important;
+}
+
+.ts-poll-emoji-100:before {
+  display: none;
+}
+
+.mlw_qmn_message_before {
+  margin-bottom: 0;
+}
+.mlw_qmn_message_before p {
+  font-size: 20px;
+  font-family: "Outfit";
+  text-transform: uppercase;
+}
+
+.album-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.album-wrapper .cover-art {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+.album-wrapper .cover-art img {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.album-wrapper .tracklist {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tracklist .links {
+  display: flex;
+  gap: 30px;
+}
+.tracklist .links button {
+  width: 100px;
+  font-size: 14px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-description {
+  padding: 20px 0;
+}
+
+.type-music {
+  border: 1px solid #2b2b2e;
+  background-color: #161616;
+}
+.type-music .cm-featured-image img {
+  width: 100%;
+  min-height: 340px;
+  max-height: 340px;
+  object-fit: cover;
+}
+
+.music-player {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .album-wrapper {
+    flex-direction: column;
+  }
+}
+.cm-post-content p {
+  margin-bottom: 24px;
+}
+
+.dark-skin .cm-posts .post {
+  background-color: #161616;
+}
+
+.cm-featured-posts .cm-first-post .cm-entry-title {
+  font-size: 20px;
+}
+
+.wp-caption-text {
+  color: #fff;
+}
+
+.theChampCommentingTabs .comment-reply-title,
+.theChampCommentingTabs .logged-in-as {
+  color: #fff;
+}
+.theChampCommentingTabs .theChampSelectedTab {
+  color: #fff;
+  border-bottom: 2px solid #ff0000;
+}
+
+.taxonomy-description {
+  color: #fff;
+}
+
+.type-news {
+  border: 1px solid #2b2b2e;
+  background-color: #161616;
+}
+
+.cm-featured-image img {
+  width: 100%;
+  min-height: 340px;
+  max-height: 340px;
+  object-fit: cover;
+}
+
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event {
+  background-color: #161616 !important;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_cblock {
+  align-items: center;
+}
+
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a {
+  background-color: #161616 !important;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evoet_c2 {
+  width: 100%;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evoet_title {
+  font-size: 24px !important;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_time {
+  font-size: 14px !important;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: none !important;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_location {
+  font-size: 14px !important;
+  color: #fff;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_oganizer {
+  flex-direction: column;
+  display: none !important;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evo_mytime {
+  display: none !important;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evo_mytime em {
+  color: #fff !important;
+}
+.evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evo_mytime em i {
+  opacity: 0.7;
+}
+
+.evo_slider_slide_out {
+  border-radius: 0 !important;
+}
+
+.evoslider.ajde_evcal_calendar.ss_imgtop.multiSlider .eventon_list_event.hasbgimg .evo_boxtop {
+  flex: 0 0 280px !important;
+}
+
+.evoslider .eventon_events_list {
+  gap: 20px;
+}
+
+.type-videos {
+  border: 1px solid #2b2b2e;
+  background-color: #161616;
+}
+.type-videos .cm-featured-image img {
+  width: 100%;
+  min-height: 340px;
+  max-height: 340px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=custom.css.map */
