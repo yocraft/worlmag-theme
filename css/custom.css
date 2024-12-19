@@ -1255,7 +1255,7 @@ button {
   background: linear-gradient(180deg, rgba(35, 35, 35, 0) 0%, #121111 100%);
 }
 
-.cm-featured-category-slider img, .cm-slider-area-rotate img {
+.cm-slider-area-rotate img {
   object-fit: cover;
   height: 100vh;
 }
