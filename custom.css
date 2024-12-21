@@ -1503,6 +1503,7 @@ button {
 
 .cm-featured-posts .cm-first-post .cm-entry-title {
   font-size: 20px;
+  line-height: 1.25 !important;
 }
 
 .wp-caption-text {
@@ -1548,7 +1549,8 @@ button {
   width: 100%;
 }
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evoet_title {
-  font-size: 24px !important;
+  font-size: 20px !important;
+  line-height: 1.25 !important;
 }
 .evosliderbox.ajde_evcal_calendar.multiSlider .hasbgimg.eventon_list_event .evcal_list_a .evcal_time {
   font-size: 14px !important;
