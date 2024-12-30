@@ -522,4 +522,9 @@ function custom_remove_menus()
     }
 }
 add_action('admin_menu', 'custom_remove_menus', 9999);
+
+// Enable shortcodes in navigation menus
+add_filter('wp_nav_menu_items', 'do_shortcode');
+add_filter('wp_nav_menu', 'do_shortcode');
+
 #endregion
