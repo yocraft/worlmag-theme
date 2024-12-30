@@ -527,4 +527,9 @@ add_action('admin_menu', 'custom_remove_menus', 9999);
 add_filter('wp_nav_menu_items', 'do_shortcode');
 add_filter('wp_nav_menu', 'do_shortcode');
 
+add_filter('walker_nav_menu_start_el', function ($item_output, $item, $depth, $args) {
+    // Allow iframes in menu items
+    return $item_output;
+}, 10, 4);
+
 #endregion
